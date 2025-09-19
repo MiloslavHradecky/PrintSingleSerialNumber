@@ -1,0 +1,15 @@
+# Bash:
+#   pip install pip-tools
+#   pip-compile dev-requirements.in
+#   pip install -r dev-requirements.txt
+
+# Development tools
+pip-tools
+
+# Static analysis
+flake8
+pylint
+vulture
+
+# Build tools
+pyinstaller

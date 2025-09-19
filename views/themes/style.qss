@@ -1,0 +1,12 @@
+/*
+ * style - Qt Style Sheet
+ * Created: 2025.09.19
+ */
+
+/* Base styling */
+QWidget {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+/* Add your QSS styles here */

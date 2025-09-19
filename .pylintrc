@@ -1,0 +1,23 @@
+[MASTER]
+ignore=venv,.venv,__pycache__,tests,settings
+extension-pkg-whitelist=utils
+ignore-patterns=.*vulture_whitelist\.py
+
+[MESSAGES CONTROL]
+disable=
+    E0401,  # import-error
+    E0611,  # no-name-in-module (často falešné u PyQt6)
+    W0212,  # protected-access
+    W1514,  # unspecified-encoding
+
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-attributes=6
+max-locals=15
+max-returns=6
+max-statements=50
+max-branches=12
+max-parents=3

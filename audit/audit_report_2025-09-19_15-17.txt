@@ -1,0 +1,30 @@
+🔍 VULTURE — nevyužitý kód
+------------------------------------------------------------
+utils\resource_resolver.py:31: unused class 'ResourceResolver' (60% confidence)
+utils\resource_resolver.py:70: unused method 'config' (60% confidence)
+
+🧼 FLAKE8 — styl a chyby
+------------------------------------------------------------
+
+
+🧠 PYLINT — hloubková analýza
+------------------------------------------------------------
+📄 .\src\main.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\resource_resolver.py
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+
+📄 .\views\login_window.py
+************* Module login_window
+views\login_window.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+--------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 10.00/10, -10.00)
+
