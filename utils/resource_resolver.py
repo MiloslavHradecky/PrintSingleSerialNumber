@@ -71,4 +71,4 @@ class ResourceResolver:
         """
         Returns absolute path to the configuration file.
         """
-        return Path(sys.argv[0]).resolve().parent / self.config_filename
+        return self.base_path / self.config_filename

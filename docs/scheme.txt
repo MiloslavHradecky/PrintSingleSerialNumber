@@ -1,0 +1,67 @@
+📦 PackingLine/
+│
+├── audit/
+│   ├── audit.py
+│   ├── audit_report_xxxx-xx-xx_xx-xx.txt
+│   └── vulture_whitelist.txt
+│
+├── controllers/
+│   ├── login_controller.py
+│   └──
+│
+├── docs/
+│   ├── home_terminal.md
+│   ├── scheme.txt
+│   └── work_terminal.md
+│
+├── installer/
+│   └── version.txt
+│
+├── models/
+│   └── user_model.py
+│
+├── settings/
+│   ├── config.ini
+│   └── create_config.py
+│
+├── src/
+│   ├── logs/
+│   │   ├── app.json
+│   │   └── app.txt
+│   │
+│   ├── config.ini
+│   └── main.py
+│
+├── utils/
+│   ├── config_checker.py
+│   ├── ensure_logs_dir.py
+│   ├── logger.py
+│   ├── messenger.py
+│   ├── path_validation.py
+│   ├── resource_resolver.py
+│   ├── single_instance.py
+│   ├── system_info.py
+│   └── window_stack.py
+│
+├── views/
+│   ├── assets/
+│   │   ├── login.tiff
+│   │   ├── main.ico
+│   │   ├── message.ico
+│   │   └── splash_logo.png
+│   │
+│   ├── themes/
+│   │   └── style.qss
+│   │
+│   ├── login_window.py
+│   └──
+│
+├── .flake8
+├── .gitignore
+├── .pylintrc
+├── dev-requirements.in
+├── dev-requirements.txt
+├── LICENSE
+├── README.md
+├── requirements.in
+└── requirements.txt
