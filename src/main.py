@@ -135,9 +135,11 @@ class AppLauncher:
 
         splash = CustomSplash(login_window)
         _ = Messenger(splash)
-
-        self.window_stack.push(login_window)
         splash.show()
+
+        # 🎭 Block further execution until splash screen closes
+        while splash.isVisible():
+            self.app.processEvents()
 
 
 def main():

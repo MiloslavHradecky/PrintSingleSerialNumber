@@ -80,3 +80,37 @@ QLabel#PrintInfoLabel {
     color: #0D47A1;
     padding: 12px;
 }
+
+/* ============================= */
+/*   Splash screen background    */
+/* ============================= */
+
+CustomSplash {
+    background-color: #202020;
+}
+
+/* ============================= */
+/*        Splash  message        */
+/* ============================= */
+
+QLabel#splashMessage {
+    color: white;
+    font-size: 20px;
+    qproperty-alignment: AlignCenter;
+}
+
+/* ============================= */
+/*     Splash  progress bar      */
+/* ============================= */
+
+QProgressBar#splashProgress {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+QProgressBar#splashProgress::chunk {
+    background-color: #00c4ff;
+    width: 10px;
+    margin: 1px;
+}

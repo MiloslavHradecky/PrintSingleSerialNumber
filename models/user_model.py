@@ -21,7 +21,7 @@ from pathlib import Path
 # 🧠 First-party (project-specific)
 from utils.logger import get_logger
 from utils.messenger import Messenger
-from utils.resources import get_config_path, resolve_path
+from utils.resource_resolver import ResourceResolver
 
 # 📌 Global variable holding the value prefix
 VALUE_PREFIX = None
@@ -45,14 +45,15 @@ class SzvDecrypt:
         Initializes decryption logic, loads config, and prepares messenger and logger.
         """
         # 📌 Loading the configuration file
-        config_path = get_config_path(config_file)
+        self.resolver = ResourceResolver(config_file)
+        config_path = self.resolver.config()
         self.config = configparser.ConfigParser()
         self.config.optionxform = str  # 💡 Ensures letter size is maintained
         self.config.read(config_path)
 
         # 📌 Initialization
         raw_path = self.config.get('Paths', 'szv_input_file')
-        self.szv_input_file = resolve_path(raw_path)
+        self.szv_input_file = self.resolver.resolve(raw_path)
         self.logger = get_logger("SzvDecrypt")
         self.messenger = Messenger()
         self.value_surname = None

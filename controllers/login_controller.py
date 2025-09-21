@@ -10,6 +10,7 @@ Author: Miloslav Hradecky
 """
 
 # 🧱 Standard library
+import sys
 import configparser
 
 # 🧠 First-party (project-specific)
@@ -17,6 +18,7 @@ import models.user_model
 
 from utils.logger import get_logger
 from utils.messenger import Messenger
+from utils.login_services import LoginServices
 from utils.resource_resolver import ResourceResolver
 
 
@@ -30,7 +32,8 @@ class LoginController:
         Initializes login logic, UI bindings, and supporting services.
         """
         # 📌 Loading the configuration file
-        config_path = get_config_path("config.ini")
+        resolver = ResourceResolver()
+        config_path = resolver.config()
         self.config = configparser.ConfigParser()
         self.config.optionxform = str  # 💡 Ensures letter size is maintained
         self.config.read(config_path)
@@ -42,33 +45,34 @@ class LoginController:
         self.value_prefix = None
         self.logger = get_logger("LoginController")
         self.messenger = Messenger(self.login_window)
+        self.services = LoginServices(config=self.config, messenger=self.messenger)
 
         # 📌 Linking the button to the method
-        # self.login_window.login_button.clicked.connect(self.handle_login)
+        self.login_window.login_button.clicked.connect(self.handle_login)
         self.login_window.exit_button.clicked.connect(self.handle_exit)
 
-    # def handle_login(self):
-    #     """
-    #     Processes login input and opens the next window if credentials are valid.
-    #     """
-    #     password = self.login_window.password_input.text().strip()
-    #     self.login_window.password_input.clear()
-    #
-    #     try:
-    #         if self.services.decrypter.check_login(password):
-    #             self.value_prefix = models.user_model.get_value_prefix()
-    #             self.services.bartender.kill_processes()
-    #             # self.open_work_order_window()
-    #         else:
-    #             self.logger.warning("Zadané heslo '%s' není správné!", password)
-    #             self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
-    #             self.login_window.password_input.clear()
-    #             self.login_window.password_input.setFocus()
-    #     except Exception as e:
-    #         self.logger.error("Neočekávaný problém: %s", str(e))
-    #         self.messenger.error(str(e), "Login Ctrl")
-    #         self.login_window.password_input.clear()
-    #         self.login_window.password_input.setFocus()
+    def handle_login(self):
+        """
+        Processes login input and opens the next window if credentials are valid.
+        """
+        password = self.login_window.password_input.text().strip()
+        self.login_window.password_input.clear()
+
+        try:
+            if self.services.decrypter.check_login(password):
+                self.value_prefix = models.user_model.get_value_prefix()
+                self.services.bartender.kill_processes()
+                # self.open_work_order_window()
+            else:
+                self.logger.warning("Zadané heslo '%s' není správné!", password)
+                self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
+                self.login_window.password_input.clear()
+                self.login_window.password_input.setFocus()
+        except Exception as e:
+            self.logger.error("Neočekávaný problém: %s", str(e))
+            self.messenger.error(str(e), "Login Ctrl")
+            self.login_window.password_input.clear()
+            self.login_window.password_input.setFocus()
 
     # def open_work_order_window(self):
     #     """
@@ -83,4 +87,4 @@ class LoginController:
         Closes the LoginWindow and exits the application.
         """
         self.logger.info("Aplikace byla ukončena uživatelem.")
-        self.login_window.effects.fade_out(self.login_window, duration=1000)
+        sys.exit(1)

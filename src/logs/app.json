@@ -1,0 +1,171 @@
+{"timestamp": "2025-09-21 13:39:22,428", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:39:22,431", "level": "ERROR", "module": "ConfigFileChecker", "message": "Konfigurační soubor chybí: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\utils\\config.ini"}
+{"timestamp": "2025-09-21 13:40:30,342", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:40:30,344", "level": "ERROR", "module": "ConfigFileChecker", "message": "Konfigurační soubor chybí: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\utils\\config.ini"}
+{"timestamp": "2025-09-21 13:42:01,898", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:42:01,901", "level": "ERROR", "module": "ConfigFileChecker", "message": "Konfigurační soubor chybí: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\utils\\config.ini"}
+{"timestamp": "2025-09-21 13:46:26,672", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:46:26,674", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 13:46:26,681", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 13:47:08,376", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 13:49:19,510", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:49:19,512", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 13:49:19,515", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 13:50:51,071", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 13:52:29,538", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:52:29,540", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 13:52:29,547", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 13:52:39,663", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 13:54:02,491", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:54:02,493", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 13:54:02,499", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 13:54:13,630", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 13:55:36,454", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:55:36,456", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 13:55:36,463", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 13:55:40,982", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 13:58:39,126", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 13:58:39,129", "level": "ERROR", "module": "ConfigFileChecker", "message": "Konfigurační soubor chybí: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\config.ini"}
+{"timestamp": "2025-09-21 14:03:06,570", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:03:06,572", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:03:06,579", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:04:07,964", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:12:19,592", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:12:19,595", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:12:19,601", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:12:24,258", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:15:56,916", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:15:56,918", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:15:56,923", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:17:58,350", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:17:58,352", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:17:58,359", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:19:44,600", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:19:44,602", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:19:44,608", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:20:00,887", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:20:00,889", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:20:00,893", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:20:16,375", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:28:48,339", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:28:48,341", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:28:48,347", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:28:52,366", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:29:28,667", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:29:28,669", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:29:28,675", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:29:30,463", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:31:11,298", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:31:11,300", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:31:11,303", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:32:02,286", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:32:02,289", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:32:02,297", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:32:21,570", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:32:21,572", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:32:21,576", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:32:24,454", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:34:42,502", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:34:42,504", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:34:42,510", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:34:44,357", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:35:33,370", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:35:33,372", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:35:33,375", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:38:33,408", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:38:33,410", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:38:33,416", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:39:37,397", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:39:37,399", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:39:37,405", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:40:43,904", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:40:43,906", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:40:43,909", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:40:48,948", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 14:45:29,324", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:45:29,326", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:45:29,329", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:46:37,791", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:46:37,793", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:46:37,801", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:47:14,299", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:47:14,301", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:47:14,307", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:47:57,343", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:47:57,345", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:47:57,351", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:49:42,817", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:49:42,819", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:49:42,825", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:50:52,833", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:50:52,836", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:50:52,842", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:52:42,333", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:52:42,335", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:52:42,341", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:58:38,348", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:58:38,350", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:58:38,356", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 14:59:41,086", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 14:59:41,088", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 14:59:41,094", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:00:19,457", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:00:19,459", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:00:19,463", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:01:11,287", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:01:11,289", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:01:11,293", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:01:44,269", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:01:44,271", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:01:44,275", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:04:07,558", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:04:07,560", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:04:07,564", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:04:21,736", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 15:05:06,145", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:05:06,147", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:05:06,153", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:05:23,402", "level": "WARNING", "module": "SzvDecrypt", "message": "Zadané heslo (ptgpt) nebylo nalezeno v souboru (T:\\Prikazy\\DataTPV\\SZV.dat)."}
+{"timestamp": "2025-09-21 15:05:23,402", "level": "WARNING", "module": "LoginController", "message": "Zadané heslo 'ptgpt' není správné!"}
+{"timestamp": "2025-09-21 15:05:27,837", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-21 15:05:30,823", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 15:11:35,372", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:11:35,374", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:11:35,378", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:11:35,379", "level": "ERROR", "module": "Main", "message": "Neočekávaná chyba při spuštění aplikace: name 'login_window' is not defined"}
+{"timestamp": "2025-09-21 15:13:20,255", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:13:20,257", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:13:20,260", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:13:34,037", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 15:14:06,623", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:14:06,625", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:14:06,628", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:14:16,709", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 15:16:48,867", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 15:16:48,869", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 15:16:48,873", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 15:16:59,765", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 18:57:34,701", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 18:57:34,705", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 18:57:34,716", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 18:58:25,393", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 19:01:58,656", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 19:01:58,659", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 19:01:58,666", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 19:02:06,553", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 19:02:38,481", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 19:02:38,484", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 19:02:38,491", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 19:02:49,015", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 19:06:08,739", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 19:06:08,741", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 19:06:08,748", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 19:06:28,614", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 19:10:29,632", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 19:10:29,634", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 19:10:29,640", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 19:10:43,430", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 19:15:15,533", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 19:15:15,535", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 19:15:15,541", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 19:15:34,316", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}

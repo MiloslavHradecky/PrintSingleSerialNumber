@@ -58,18 +58,15 @@ class CustomSplash(QWidget):
         super().__init__()
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
-
-        # 🖼️ Frameless & topmost styling
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
         self.setFixedSize(600, 400)
-        self.setStyleSheet("QWidget { background-color: #202020; }")
 
         # 🧩 Set window icon using resource_path for compatibility
-        icon_login_path = self.resolver.resource("assets/main.ico")
+        icon_login_path = self.resolver.resource("views/assets/main.ico")
         self.setWindowIcon(QIcon(str(icon_login_path)))
 
         # 🎬 Display splash logo with fade-in animation
-        splash_image_path = self.resolver.resource("assets/splash_logo.png")
+        splash_image_path = self.resolver.resource("views/assets/splash_logo.png")
         pixmap = QPixmap(str(splash_image_path))
         scaled = pixmap.scaled(300, 300, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
         logo_label = PixmapFader(scaled)
@@ -82,31 +79,16 @@ class CustomSplash(QWidget):
 
         # 💬 Display loading message
         self.message = QLabel("Inicializuji aplikaci...", self)
+        self.message.setObjectName("splashMessage")
         self.message.setGeometry(100, 310, 400, 30)
-        self.message.setStyleSheet("color: white; font-size: 20px;")
-        self.message.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # 📶 Progress bar setup
         self.progress = QProgressBar(self)
+        self.progress.setObjectName("splashProgress")
         self.progress.setGeometry(100, 350, 400, 25)
         self.progress.setRange(0, 200)
         self.progress.setValue(0)
         self.progress.setTextVisible(True)
-
-        # 🎨 Styling the progress bar
-        self.progress.setStyleSheet("""
-            QProgressBar {
-                color: white;
-                border: 2px solid white;
-                border-radius: 5px;
-                text-align: center;
-            }
-            QProgressBar::chunk {
-                background-color: #00c4ff;
-                width: 10px;
-                margin: 1px;
-            }
-        """)
 
         # 🕒 Timer to update progress bar and trigger transition
         self.timer = QTimer()

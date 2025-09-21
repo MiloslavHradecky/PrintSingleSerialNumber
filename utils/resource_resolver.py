@@ -45,14 +45,13 @@ class ResourceResolver:
         try:
             return Path(sys._MEIPASS)  # type: ignore
         except AttributeError:
-            fallback = Path(__file__).resolve().parent
-            return fallback if fallback.exists() else Path.cwd()
+            return Path(sys.argv[0]).resolve().parent
 
     def resource(self, relative_path: str) -> Path:
         """
         Resolves relative resource path to absolute, based on detected base path.
         """
-        return self.base_path / relative_path
+        return self.base_path.parent / relative_path
 
     def resolve(self, config_value: str) -> Path:
         """
