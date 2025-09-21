@@ -45,3 +45,10 @@ class SingleInstanceChecker:
         if not self.shared_memory.create(1):
             return True
         return False
+
+    def release(self):
+        """
+        Releases the shared memory segment if it was created.
+        """
+        if self.shared_memory.isAttached():
+            self.shared_memory.detach()

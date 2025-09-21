@@ -203,3 +203,17 @@
 {"timestamp": "2025-09-21 20:47:55,921", "level": "WARNING", "module": "LoginController", "message": "Zadané heslo '123' není správné!"}
 {"timestamp": "2025-09-21 20:48:00,481", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
 {"timestamp": "2025-09-21 20:48:03,458", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 23:09:39,507", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 23:09:39,509", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 23:09:39,514", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 23:09:48,498", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 23:17:22,729", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 23:17:22,732", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 23:17:22,737", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 23:17:33,682", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-21 23:41:07,132", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-21 23:41:07,134", "level": "INFO", "module": "ConfigFileChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-21 23:41:07,139", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-21 23:41:33,546", "level": "WARNING", "module": "SzvDecrypt", "message": "Zadané heslo () nebylo nalezeno v souboru (T:\\Prikazy\\DataTPV\\SZV.dat)."}
+{"timestamp": "2025-09-21 23:41:33,546", "level": "WARNING", "module": "LoginController", "message": "Zadané heslo '' není správné!"}
+{"timestamp": "2025-09-21 23:41:36,700", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}

@@ -24,23 +24,20 @@ Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
 
 📄 .\models\user_info.py
 
--------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 8.00/10, +2.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\models\user_model.py
 
--------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 9.86/10, +0.14)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\src\main.py
-************* Module main
-src\main.py:41:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-src\main.py:160:11: W0718: Catching too general exception Exception (broad-exception-caught)
 
-------------------------------------------------------------------
-Your code has been rated at 9.76/10 (previous run: 9.64/10, +0.12)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\bartender_utils.py
@@ -132,12 +129,7 @@ Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
 
 
 📄 .\views\splash_screen.py
-************* Module splash_screen
-views\splash_screen.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
-views\splash_screen.py:14:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-views\splash_screen.py:104:4: C0116: Missing function or method docstring (missing-function-docstring)
-views\splash_screen.py:49:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
-------------------------------------------------------------------
-Your code has been rated at 9.34/10 (previous run: 9.34/10, +0.00)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.84/10, +0.16)
 

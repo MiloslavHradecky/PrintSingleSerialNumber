@@ -55,11 +55,12 @@ class AppLauncher:
         self.logger = get_logger("Main")
         self.resolver = ResourceResolver()
         self.window_stack = WindowStackManager()
+        self.checker = None
         self.app = None
 
-    def run(self):
+    def initialize(self):
         """
-        Executes the full startup sequence of the application.
+        Prepares the application environment before launch.
         """
         ensure_logs_dir()
         self._add_blank_line_to_log()
@@ -69,6 +70,12 @@ class AppLauncher:
         log_system_info(self.version)
         self._check_config_file()
         self._validate_config_paths()
+
+    def run(self):
+        """
+        Executes the UI launch sequence.
+        """
+        self.initialize()
         self._launch_ui()
         self.app.exec()
 
@@ -87,8 +94,8 @@ class AppLauncher:
         """
         Ensures that only one instance of the application is running.
         """
-        checker = SingleInstanceChecker("PrintSingleSnUniqueAppKey")
-        if checker.is_running():
+        self.checker = SingleInstanceChecker("PrintSingleSnUniqueAppKey")
+        if self.checker.is_running():
             self.app = QApplication([])
             Messenger(None).error("Upozornění - Aplikace už běží!", "Main")
             sys.exit(0)
@@ -139,11 +146,18 @@ class AppLauncher:
 
         splash = CustomSplash(login_window)
         _ = Messenger(splash)
-        splash.show()
+        splash.start()
 
         # 🎭 Block further execution until splash screen closes
         while splash.isVisible():
             self.app.processEvents()
+
+    def shutdown(self):
+        """
+        Cleans up resources before application exit.
+        """
+        if self.checker:
+            self.checker.release()
 
 
 def main():
@@ -152,12 +166,13 @@ def main():
     """
     launcher = AppLauncher(__version__)
     launcher.run()
+    launcher.shutdown()
 
 
 if __name__ == "__main__":
     try:
         main()
-    except Exception as startup_error:
+    except (FileNotFoundError, ValueError, OSError, RuntimeError) as startup_error:
         startup_logger = get_logger("Main")
         startup_logger.exception("Neočekávaná chyba při spuštění aplikace: %s", startup_error)
         Messenger(None).error("Neočekávaná chyba. Aplikace bude ukončena.", "Main")

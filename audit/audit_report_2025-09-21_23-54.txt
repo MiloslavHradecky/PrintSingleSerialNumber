@@ -9,43 +9,35 @@ utils\window_stack.py:39: unused method 'push' (60% confidence)
 
 🧼 FLAKE8 — styl a chyby
 ------------------------------------------------------------
-.\models\user_info.py:13:1: E302 expected 2 blank lines, found 1
+
 
 🧠 PYLINT — hloubková analýza
 ------------------------------------------------------------
 📄 .\controllers\login_controller.py
 ************* Module login_controller
 controllers\login_controller.py:25:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
-controllers\login_controller.py:71:15: W0718: Catching too general exception Exception (broad-exception-caught)
+controllers\login_controller.py:70:15: W0718: Catching too general exception Exception (broad-exception-caught)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
+Your code has been rated at 9.50/10 (previous run: 9.52/10, -0.02)
 
 
 📄 .\models\user_info.py
-************* Module user_info
-models\user_info.py:14:0: C0115: Missing class docstring (missing-class-docstring)
 
------------------------------------
-Your code has been rated at 8.00/10
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\models\user_model.py
-************* Module user_model
-models\user_model.py:25:0: C0412: Imports from package utils are not grouped (ungrouped-imports)
 
-------------------------------------------------------------------
-Your code has been rated at 9.86/10 (previous run: 9.86/10, -0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\src\main.py
-************* Module main
-src\main.py:40:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-src\main.py:159:11: W0718: Catching too general exception Exception (broad-exception-caught)
-src\main.py:29:0: C0412: Imports from package utils are not grouped (ungrouped-imports)
 
-------------------------------------------------------------------
-Your code has been rated at 9.64/10 (previous run: 9.64/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\bartender_utils.py
@@ -108,11 +100,9 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\single_instance.py
-************* Module single_instance
-utils\single_instance.py:18:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
-------------------------------------------------------------------
-Your code has been rated at 9.09/10 (previous run: 9.09/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\system_info.py
@@ -128,21 +118,13 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\views\login_window.py
-************* Module login_window
-views\login_window.py:26:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
-views\login_window.py:26:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
-------------------------------------------------------------------
-Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.77/10, +0.23)
 
 
 📄 .\views\splash_screen.py
-************* Module splash_screen
-views\splash_screen.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
-views\splash_screen.py:14:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-views\splash_screen.py:104:4: C0116: Missing function or method docstring (missing-function-docstring)
-views\splash_screen.py:49:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
-------------------------------------------------------------------
-Your code has been rated at 9.34/10 (previous run: 9.34/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 

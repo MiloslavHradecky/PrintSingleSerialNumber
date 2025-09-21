@@ -55,8 +55,8 @@ class LoginController:
         """
         Processes login input and opens the next window if credentials are valid.
         """
-        password = self.login_window.password_input.text().strip()
-        self.login_window.password_input.clear()
+        password = self.login_window.get_password()
+        self.login_window.clear_password()
 
         try:
             if self.services.decrypter.check_login(password):
@@ -66,13 +66,11 @@ class LoginController:
             else:
                 self.logger.warning("Zadané heslo '%s' není správné!", password)
                 self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
-                self.login_window.password_input.clear()
-                self.login_window.password_input.setFocus()
+                self.login_window.reset_password_input()
         except Exception as e:
             self.logger.error("Neočekávaný problém: %s", str(e))
             self.messenger.error(str(e), "Login Ctrl")
-            self.login_window.password_input.clear()
-            self.login_window.password_input.setFocus()
+            self.login_window.reset_password_input()
 
     # def open_work_order_window(self):
     #     """

@@ -5,9 +5,12 @@ Provides visual splash screen displayed during application initialization.
 Includes logo fade-in, progress bar, and automatic transition to main window.
 """
 
+# 🧩 Third-party libraries
 from PyQt6.QtWidgets import QWidget, QLabel, QProgressBar, QVBoxLayout
 from PyQt6.QtGui import QPixmap, QIcon, QPainter
 from PyQt6.QtCore import Qt, QTimer
+
+# 🧠 First-party (project-specific)
 from utils.resource_resolver import ResourceResolver
 
 
@@ -25,10 +28,18 @@ class PixmapFader(QLabel):
         self.alpha = 0
         self.timer = QTimer()
         self.timer.timeout.connect(self.fade_in)  # type: ignore
+        self.start_fade()
+
+    def start_fade(self):
+        """
+        Starts the fade-in animation.
+        """
         self.timer.start(90)  # ⏱️ Trigger every 90 ms
 
     def fade_in(self):
-        # 🧪 Stop fading once fully opaque
+        """
+        Gradually increases image opacity to create a fade-in effect.
+        """
         if self.alpha >= 255:
             self.timer.stop()
             return
@@ -55,6 +66,9 @@ class CustomSplash(QWidget):
     """
 
     def __init__(self, target_window):
+        """
+        Initializes the splash screen with logo, message, and progress bar.
+        """
         super().__init__()
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
@@ -101,7 +115,16 @@ class CustomSplash(QWidget):
         self.timer.start(30)
         self.counter = 0
 
+    def start(self):
+        """
+        Starts the splash screen animation and shows the window.
+        """
+        self.show()
+
     def handle_timer(self):
+        """
+        Updates progress bar and triggers transition to main window when complete.
+        """
         self.counter += 1
         self.progress.setValue(self.counter)
 

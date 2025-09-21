@@ -76,12 +76,7 @@ class LoginWindow(QWidget):
         self.password_input: QLineEdit = QLineEdit()
         self.password_input.setEchoMode(QLineEdit.EchoMode.Password)
         self.password_input.setPlaceholderText("Naskenujte svoji ID kartu")
-
-        # 📌 Set text color for placeholder
-        self.palette = self.password_input.palette()
-        self.placeholder_color = QColor("#757575")
-        self.palette.setColor(QPalette.ColorRole.PlaceholderText, self.placeholder_color)
-        self.password_input.setPalette(self.palette)
+        self._style_password_input()
 
         # 📌 Login button
         self.login_button: QPushButton = QPushButton("Přihlásit se")
@@ -103,4 +98,32 @@ class LoginWindow(QWidget):
         self.activateWindow()
         self.raise_()
 
+        self.password_input.setFocus()
+
+    def _style_password_input(self):
+        """
+        Applies placeholder color styling to the password input field.
+        """
+        palette = self.password_input.palette()
+        placeholder_color = QColor("#757575")
+        palette.setColor(QPalette.ColorRole.PlaceholderText, placeholder_color)
+        self.password_input.setPalette(palette)
+
+    def get_password(self) -> str:
+        """
+        Returns the entered password from the input field.
+        """
+        return self.password_input.text().strip()
+
+    def clear_password(self):
+        """
+        Clears the password input field.
+        """
+        self.password_input.clear()
+
+    def reset_password_input(self):
+        """
+        Clears the password field and sets focus for new input.
+        """
+        self.password_input.clear()
         self.password_input.setFocus()

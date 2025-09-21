@@ -273,3 +273,20 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-21 20:47:55,921 | WARNING | LoginController         | Zadané heslo '123' není správné!
 2025-09-21 20:48:00,481 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
 2025-09-21 20:48:03,458 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 23:09:39,507 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 23:09:39,509 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 23:09:39,514 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 23:09:48,498 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 23:17:22,729 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 23:17:22,732 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 23:17:22,737 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 23:17:33,682 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 23:41:07,132 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 23:41:07,134 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 23:41:07,139 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 23:41:33,546 | WARNING | SzvDecrypt              | Zadané heslo () nebylo nalezeno v souboru (T:\Prikazy\DataTPV\SZV.dat).
+2025-09-21 23:41:33,546 | WARNING | LoginController         | Zadané heslo '' není správné!
+2025-09-21 23:41:36,700 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
