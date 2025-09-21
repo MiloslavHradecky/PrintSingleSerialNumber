@@ -43,7 +43,10 @@ class ConfigFileChecker:
         """
         if not self.config_path.exists():
             self.logger.error("Konfigurační soubor chybí: %s", self.config_path)
-            self.messenger.error("Konfigurační soubor nebyl nalezen. Aplikace bude ukončena.", "ConfigFileChecker")
+            self.messenger.error(
+                "Konfigurační soubor nebyl nalezen. Aplikace bude ukončena.",
+                "ConfigFileChecker"
+            )
             sys.exit(1)
         else:
             self.logger.info("Konfigurační soubor nalezen: %s", self.config_path)

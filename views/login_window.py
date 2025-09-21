@@ -63,7 +63,11 @@ class LoginWindow(QWidget):
         # 📌 Application logo
         login_logo = self.resolver.resource("views/assets/login.tiff")
         self.logo = QLabel(self)
-        pixmap = QPixmap(str(login_logo)).scaled(self.width() - 20, 256, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
+        pixmap = QPixmap(str(login_logo)).scaled(
+            self.width() - 20, 256,
+            Qt.AspectRatioMode.KeepAspectRatio,
+            Qt.TransformationMode.SmoothTransformation
+        )
         self.logo.setPixmap(pixmap)
         self.logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.logo)

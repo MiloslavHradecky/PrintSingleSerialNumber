@@ -68,7 +68,12 @@ class CustomSplash(QWidget):
         # 🎬 Display splash logo with fade-in animation
         splash_image_path = self.resolver.resource("views/assets/splash_logo.png")
         pixmap = QPixmap(str(splash_image_path))
-        scaled = pixmap.scaled(300, 300, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
+        scaled = pixmap.scaled(
+            300,
+            300,
+            Qt.AspectRatioMode.KeepAspectRatio,
+            Qt.TransformationMode.SmoothTransformation
+        )
         logo_label = PixmapFader(scaled)
 
         # 📦 Layout configuration

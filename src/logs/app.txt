@@ -232,3 +232,20 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-21 19:15:15,535 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
 2025-09-21 19:15:15,541 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
 2025-09-21 19:15:34,316 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 19:34:29,264 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 19:34:29,266 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 19:34:29,271 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 19:34:41,332 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-21 19:34:44,145 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 19:41:19,145 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 19:41:19,147 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 19:41:19,150 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 19:41:27,750 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-21 19:41:30,625 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 19:52:00,279 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 19:52:00,281 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 19:52:00,285 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 19:52:08,751 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.

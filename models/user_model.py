@@ -96,13 +96,25 @@ class SzvDecrypt:
                             # pylint: disable=global-statement
                             global VALUE_PREFIX
                             VALUE_PREFIX = self.value_prefix  # ✅ Updating a global variable
-                            self.logger.info("Logged: %s %s %s", self.value_surname, self.value_name, self.value_prefix)
+                            self.logger.info(
+                                "Logged: %s %s %s",
+                                self.value_surname,
+                                self.value_name,
+                                self.value_prefix
+                            )
                             return True
-                        self.logger.warning("Řádek neobsahuje dostatek částí: %s", decoded_line[1])
+                        self.logger.warning(
+                            "Řádek neobsahuje dostatek částí: %s",
+                            decoded_line[1]
+                        )
                         return False
                     self.logger.warning("Řádek neobsahuje další části: %s", decoded_line)
                     return False
-            self.logger.warning("Zadané heslo (%s) nebylo nalezeno v souboru (%s).", password, self.szv_input_file)
+            self.logger.warning(
+                "Zadané heslo (%s) nebylo nalezeno v souboru (%s).",
+                password,
+                self.szv_input_file
+            )
             return False
 
         except (FileNotFoundError, ValueError, IndexError, AttributeError) as e:
@@ -121,7 +133,9 @@ class SzvDecrypt:
                 for line in infile:
                     byte_array = bytearray.fromhex(line.strip())
                     decoded_line = self.decoding_line(byte_array)
-                    decoded_lines.append([hashlib.sha256(decoded_line[0].encode()).hexdigest(), ','.join(decoded_line)])
+                    hashed_value = hashlib.sha256(decoded_line[0].encode()).hexdigest()
+                    joined_line = ','.join(decoded_line)
+                    decoded_lines.append([hashed_value, joined_line])
         except (FileNotFoundError, ValueError, OSError, IndexError, AttributeError) as e:
             self.logger.error("Při čtení souboru došlo k chybě: %s", str(e))
             self.messenger.error(f"{str(e)}", "Přihlášení")

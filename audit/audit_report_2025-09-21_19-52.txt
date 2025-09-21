@@ -1,0 +1,138 @@
+🔍 VULTURE — nevyužitý kód
+------------------------------------------------------------
+controllers\login_controller.py:44: unused attribute 'work_order_controller' (60% confidence)
+utils\messenger.py:121: unused method 'auto_info_dialog' (60% confidence)
+utils\window_stack.py:33: unused method 'mark_exiting' (60% confidence)
+utils\window_stack.py:39: unused method 'push' (60% confidence)
+
+🧼 FLAKE8 — styl a chyby
+------------------------------------------------------------
+
+
+🧠 PYLINT — hloubková analýza
+------------------------------------------------------------
+📄 .\controllers\login_controller.py
+************* Module login_controller
+controllers\login_controller.py:25:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
+controllers\login_controller.py:71:15: W0718: Catching too general exception Exception (broad-exception-caught)
+
+------------------------------------------------------------------
+Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
+
+
+📄 .\models\user_model.py
+************* Module user_model
+models\user_model.py:37:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
+
+------------------------------------------------------------------
+Your code has been rated at 9.86/10 (previous run: 9.71/10, +0.15)
+
+
+📄 .\src\main.py
+************* Module main
+src\main.py:40:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+src\main.py:159:11: W0718: Catching too general exception Exception (broad-exception-caught)
+src\main.py:29:0: C0412: Imports from package utils are not grouped (ungrouped-imports)
+
+------------------------------------------------------------------
+Your code has been rated at 9.64/10 (previous run: 9.52/10, +0.12)
+
+
+📄 .\utils\bartender_utils.py
+************* Module bartender_utils
+utils\bartender_utils.py:40:12: W1510: 'subprocess.run' used without explicitly defining the value for 'check'. (subprocess-run-check)
+utils\bartender_utils.py:45:12: W1510: 'subprocess.run' used without explicitly defining the value for 'check'. (subprocess-run-check)
+utils\bartender_utils.py:17:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.00/10 (previous run: 6.00/10, +2.00)
+
+
+📄 .\utils\config_checker.py
+************* Module config_checker
+utils\config_checker.py:21:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.38/10 (previous run: 8.75/10, +0.62)
+
+
+📄 .\utils\ensure_logs_dir.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\logger.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.23/10, +0.77)
+
+
+📄 .\utils\login_services.py
+************* Module login_services
+utils\login_services.py:19:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)
+
+
+📄 .\utils\messenger.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\path_validation.py
+************* Module path_validation
+utils\path_validation.py:72:19: W0718: Catching too general exception Exception (broad-exception-caught)
+utils\path_validation.py:26:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.43/10 (previous run: 8.86/10, +0.57)
+
+
+📄 .\utils\resource_resolver.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\single_instance.py
+************* Module single_instance
+utils\single_instance.py:18:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.09/10 (previous run: 9.09/10, +0.00)
+
+
+📄 .\utils\system_info.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\window_stack.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\views\login_window.py
+************* Module login_window
+views\login_window.py:26:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
+views\login_window.py:26:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.52/10 (previous run: 9.29/10, +0.24)
+
+
+📄 .\views\splash_screen.py
+************* Module splash_screen
+views\splash_screen.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
+views\splash_screen.py:14:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+views\splash_screen.py:104:4: C0116: Missing function or method docstring (missing-function-docstring)
+views\splash_screen.py:49:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.34/10 (previous run: 9.18/10, +0.16)
+

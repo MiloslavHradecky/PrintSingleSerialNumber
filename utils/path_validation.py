@@ -64,7 +64,10 @@ class PathValidator:
                 path = self.resolver.resolve(raw)
                 if not path.exists():
                     self.logger.warning("Cesta nebo soubor neexistuje: %s → %s", key, path)
-                    self.messenger.warning(f"Cesta nebo soubor neexistuje:\n{path}", "Path Validation")
+                    self.messenger.warning(
+                        f"Cesta nebo soubor neexistuje:\n{path}",
+                        "Path Validation"
+                    )
                     self.missing.append((key, path))
             except Exception as e:
                 self.logger.error("Chyba při čtení %s: %s", key, str(e))
@@ -72,7 +75,10 @@ class PathValidator:
                 self.missing.append((key, "chyba v configu"))
 
         if self.missing:
-            self.messenger.error("Následující cesty jsou neplatné nebo chybí soubor:", "Path Validation")
+            self.messenger.error(
+                "Následující cesty jsou neplatné nebo chybí soubor:",
+                "Path Validation"
+            )
             for key, path in self.missing:
                 self.messenger.error(f"\n{key}\n{path}", "Path Validation")
             return False

@@ -122,7 +122,10 @@ class AppLauncher:
         config.read("config.ini")
         validator = PathValidator()
         if not validator.validate():
-            Messenger(None).error("Konfigurace obsahuje neplatné cesty. Aplikace bude ukončena.", "Main")
+            Messenger(None).error(
+                "Konfigurace obsahuje neplatné cesty. Aplikace bude ukončena.",
+                "Main"
+            )
             sys.exit(1)
 
     def _launch_ui(self):
