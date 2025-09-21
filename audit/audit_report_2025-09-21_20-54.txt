@@ -1,6 +1,8 @@
 🔍 VULTURE — nevyužitý kód
 ------------------------------------------------------------
 controllers\login_controller.py:44: unused attribute 'work_order_controller' (60% confidence)
+controllers\login_controller.py:45: unused attribute 'value_prefix' (60% confidence)
+controllers\login_controller.py:63: unused attribute 'value_prefix' (60% confidence)
 utils\messenger.py:121: unused method 'auto_info_dialog' (60% confidence)
 utils\window_stack.py:33: unused method 'mark_exiting' (60% confidence)
 utils\window_stack.py:39: unused method 'push' (60% confidence)
@@ -20,22 +22,25 @@ controllers\login_controller.py:71:15: W0718: Catching too general exception Exc
 Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
 
 
-📄 .\models\user_model.py
-************* Module user_model
-models\user_model.py:37:0: R0902: Too many instance attributes (8/6) (too-many-instance-attributes)
+📄 .\models\user_info.py
 
-------------------------------------------------------------------
-Your code has been rated at 9.86/10 (previous run: 9.71/10, +0.15)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.00/10, +2.00)
+
+
+📄 .\models\user_model.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.86/10, +0.14)
 
 
 📄 .\src\main.py
 ************* Module main
-src\main.py:40:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-src\main.py:159:11: W0718: Catching too general exception Exception (broad-exception-caught)
-src\main.py:29:0: C0412: Imports from package utils are not grouped (ungrouped-imports)
+src\main.py:41:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+src\main.py:160:11: W0718: Catching too general exception Exception (broad-exception-caught)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.64/10 (previous run: 9.52/10, +0.12)
+Your code has been rated at 9.76/10 (previous run: 9.64/10, +0.12)
 
 
 📄 .\utils\bartender_utils.py
@@ -45,7 +50,7 @@ utils\bartender_utils.py:45:12: W1510: 'subprocess.run' used without explicitly 
 utils\bartender_utils.py:17:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.00/10 (previous run: 6.00/10, +2.00)
+Your code has been rated at 8.00/10 (previous run: 8.00/10, +0.00)
 
 
 📄 .\utils\config_checker.py
@@ -53,7 +58,7 @@ Your code has been rated at 8.00/10 (previous run: 6.00/10, +2.00)
 utils\config_checker.py:21:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.38/10 (previous run: 8.75/10, +0.62)
+Your code has been rated at 9.38/10 (previous run: 9.38/10, +0.00)
 
 
 📄 .\utils\ensure_logs_dir.py
@@ -64,8 +69,8 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 📄 .\utils\logger.py
 
--------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 9.23/10, +0.77)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\login_services.py
@@ -88,7 +93,7 @@ utils\path_validation.py:72:19: W0718: Catching too general exception Exception 
 utils\path_validation.py:26:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.43/10 (previous run: 8.86/10, +0.57)
+Your code has been rated at 9.43/10 (previous run: 9.43/10, +0.00)
 
 
 📄 .\utils\resource_resolver.py
@@ -123,7 +128,7 @@ views\login_window.py:26:0: R0902: Too many instance attributes (8/6) (too-many-
 views\login_window.py:26:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.52/10 (previous run: 9.29/10, +0.24)
+Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
 
 
 📄 .\views\splash_screen.py
@@ -134,5 +139,5 @@ views\splash_screen.py:104:4: C0116: Missing function or method docstring (missi
 views\splash_screen.py:49:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.34/10 (previous run: 9.18/10, +0.16)
+Your code has been rated at 9.34/10 (previous run: 9.34/10, +0.00)
 

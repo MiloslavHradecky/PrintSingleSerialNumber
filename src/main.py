@@ -22,10 +22,11 @@ from configparser import ConfigParser
 from PyQt6.QtWidgets import QApplication
 
 # 🧠 First-party (project-specific)
-from utils.logger import get_logger
-from utils.messenger import Messenger
 from views.login_window import LoginWindow
 from views.splash_screen import CustomSplash
+
+from utils.logger import get_logger
+from utils.messenger import Messenger
 from utils.system_info import log_system_info
 from utils.path_validation import PathValidator
 from utils.ensure_logs_dir import ensure_logs_dir

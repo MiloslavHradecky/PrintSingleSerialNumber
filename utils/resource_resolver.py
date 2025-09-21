@@ -24,8 +24,9 @@ Usage:
 Author: Miloslav Hradecky
 """
 
-from pathlib import Path
+# 🧱 Standard library
 import sys
+from pathlib import Path
 
 
 class ResourceResolver:
@@ -35,23 +36,23 @@ class ResourceResolver:
     """
 
     def __init__(self, config_filename: str = "config.ini"):
-        self.base_path = self._detect_base_path()
         self.config_filename = config_filename
+        self.runtime_path = Path(sys.argv[0]).resolve().parent
+        self.base_path = self._detect_base_path()
 
     def _detect_base_path(self) -> Path:  # noqa
         """
         Detects base path depending on runtime context (standard or PyInstaller).
         """
-        try:
+        if getattr(sys, 'frozen', False):
             return Path(sys._MEIPASS)  # type: ignore
-        except AttributeError:
-            return Path(sys.argv[0]).resolve().parent
+        return Path(__file__).resolve().parent.parent
 
     def resource(self, relative_path: str) -> Path:
         """
-        Resolves relative resource path to absolute, based on detected base path.
+        Resolves path to bundled resource (e.g. .qss, images).
         """
-        return self.base_path.parent / relative_path
+        return self.base_path / relative_path
 
     def resolve(self, config_value: str) -> Path:
         """
@@ -69,5 +70,6 @@ class ResourceResolver:
     def config(self) -> Path:
         """
         Returns absolute path to the configuration file.
+        Always resolves relative to the executable/script location.
         """
-        return self.base_path / self.config_filename
+        return self.runtime_path / self.config_filename

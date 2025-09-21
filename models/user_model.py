@@ -19,6 +19,8 @@ import hashlib
 from pathlib import Path
 
 # 🧠 First-party (project-specific)
+from models.user_info import UserInfo
+
 from utils.logger import get_logger
 from utils.messenger import Messenger
 from utils.resource_resolver import ResourceResolver
@@ -47,18 +49,17 @@ class SzvDecrypt:
         # 📌 Loading the configuration file
         self.resolver = ResourceResolver(config_file)
         config_path = self.resolver.config()
+
         self.config = configparser.ConfigParser()
         self.config.optionxform = str  # 💡 Ensures letter size is maintained
         self.config.read(config_path)
 
         # 📌 Initialization
+        self.messenger = Messenger()
         raw_path = self.config.get('Paths', 'szv_input_file')
         self.szv_input_file = self.resolver.resolve(raw_path)
         self.logger = get_logger("SzvDecrypt")
-        self.messenger = Messenger()
-        self.value_surname = None
-        self.value_name = None
-        self.value_prefix = None
+        self.user_info = UserInfo()
 
     @staticmethod
     def decoding_line(encoded_data):
@@ -90,17 +91,17 @@ class SzvDecrypt:
                     if len(decoded_line) > 1:
                         parts = decoded_line[1].split(',')
                         if len(parts) >= 4:
-                            self.value_surname = parts[2].strip()
-                            self.value_name = parts[3].strip()
-                            self.value_prefix = parts[4].strip()
+                            self.user_info.surname = parts[2].strip()
+                            self.user_info.name = parts[3].strip()
+                            self.user_info.prefix = parts[4].strip()
                             # pylint: disable=global-statement
                             global VALUE_PREFIX
-                            VALUE_PREFIX = self.value_prefix  # ✅ Updating a global variable
+                            VALUE_PREFIX = self.user_info.prefix  # ✅ Updating a global variable
                             self.logger.info(
                                 "Logged: %s %s %s",
-                                self.value_surname,
-                                self.value_name,
-                                self.value_prefix
+                                self.user_info.surname,
+                                self.user_info.name,
+                                self.user_info.prefix
                             )
                             return True
                         self.logger.warning(

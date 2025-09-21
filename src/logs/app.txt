@@ -249,3 +249,27 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-21 19:52:00,281 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
 2025-09-21 19:52:00,285 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
 2025-09-21 19:52:08,751 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 20:23:14,641 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 20:23:14,643 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 20:23:14,650 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 20:23:24,872 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 20:26:17,071 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 20:26:17,073 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 20:26:17,079 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 20:26:25,894 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 20:33:00,937 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 20:33:00,940 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 20:33:00,947 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 20:33:09,830 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-21 20:33:12,582 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-21 20:47:43,770 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-21 20:47:43,773 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-21 20:47:43,777 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-21 20:47:55,921 | WARNING | SzvDecrypt              | Zadané heslo (123) nebylo nalezeno v souboru (T:\Prikazy\DataTPV\SZV.dat).
+2025-09-21 20:47:55,921 | WARNING | LoginController         | Zadané heslo '123' není správné!
+2025-09-21 20:48:00,481 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-21 20:48:03,458 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
