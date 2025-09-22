@@ -75,8 +75,6 @@ class PrintController:
         """
         self.print_window.disable_inputs()
 
-        pass
-
         self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
         self.restore_ui()
 

@@ -43,7 +43,6 @@ class LoginController:
         # 📌 Initialization
         self.login_window = login_window
         self.window_stack = window_stack
-        self.print_controller = None
         self.value_prefix = None
         self.logger = get_logger("LoginController")
         self.messenger = Messenger(self.login_window)
@@ -61,15 +60,15 @@ class LoginController:
         self.login_window.clear_password()
 
         try:
-            if self.services.decrypter.check_login(password):
+            if self.services.check_login(password):
                 self.value_prefix = models.user_model.get_value_prefix()
-                self.services.bartender.kill_processes()
+                self.services.kill_bartender_processes()
                 self.open_print_window()
             else:
                 self.logger.warning("Zadané heslo '%s' není správné!", password)
                 self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
                 self.login_window.reset_password_input()
-        except Exception as e:
+        except (FileNotFoundError, ValueError, OSError, RuntimeError) as e:
             self.logger.error("Neočekávaný problém: %s", str(e))
             self.messenger.error(str(e), "Login Ctrl")
             self.login_window.reset_password_input()
@@ -78,8 +77,8 @@ class LoginController:
         """
         Instantiates and opens the WorkOrderController window.
         """
-        self.print_controller = PrintController(self.window_stack)
-        self.window_stack.push(self.print_controller.print_window)
+        print_controller = PrintController(self.window_stack)
+        self.window_stack.push(print_controller.print_window)
 
     def handle_exit(self):
         """

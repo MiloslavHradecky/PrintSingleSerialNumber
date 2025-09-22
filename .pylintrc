@@ -8,6 +8,7 @@ disable=
     E0401,  # import-error
     E0611,  # no-name-in-module (často falešné u PyQt6)
     W0212,  # protected-access
+    W1510,  # subprocess-run-check
     W1514,  # unspecified-encoding
 
 

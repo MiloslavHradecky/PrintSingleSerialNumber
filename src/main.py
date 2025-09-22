@@ -29,9 +29,8 @@ from utils.logger import get_logger
 from utils.messenger import Messenger
 from utils.system_info import log_system_info
 from utils.path_validation import PathValidator
-from utils.ensure_logs_dir import ensure_logs_dir
+from utils.startup_checker import StartupChecker
 from utils.window_stack import WindowStackManager
-from utils.config_checker import ConfigFileChecker
 from utils.resource_resolver import ResourceResolver
 from utils.single_instance import SingleInstanceChecker
 
@@ -55,6 +54,7 @@ class AppLauncher:
         self.logger = get_logger("Main")
         self.resolver = ResourceResolver()
         self.window_stack = WindowStackManager()
+        self.startup_checker = StartupChecker()
         self.checker = None
         self.app = None
 
@@ -62,13 +62,13 @@ class AppLauncher:
         """
         Prepares the application environment before launch.
         """
-        ensure_logs_dir()
+        self.startup_checker.ensure_logs_dir()
         self._add_blank_line_to_log()
         self._check_single_instance()
         self._create_qt_app()
         self._apply_global_stylesheet()
         log_system_info(self.version)
-        self._check_config_file()
+        self.startup_checker.check_config_or_exit()
         self._validate_config_paths()
 
     def run(self):
@@ -115,21 +115,17 @@ class AppLauncher:
             with open(style_path, encoding="utf-8") as f:
                 self.app.setStyleSheet(f.read())
 
-    def _check_config_file(self):  # noqa: method may use self.logger in future
-        """
-        Verifies that the configuration file exists.
-        """
-        checker = ConfigFileChecker()
-        checker.check_exists_or_exit()
-
     def _validate_config_paths(self):  # noqa: method may use self.logger in future
         """
         Validates paths defined in the configuration file.
+        Logs missing paths and exits if validation fails.
         """
         config = ConfigParser()
         config.read("config.ini")
         validator = PathValidator()
         if not validator.validate():
+            for key, path in validator.get_missing_paths():
+                self.logger.warning("Chybějící cesta: s% → s%", key, path)
             Messenger(None).error(
                 "Konfigurace obsahuje neplatné cesty. Aplikace bude ukončena.",
                 "Main"

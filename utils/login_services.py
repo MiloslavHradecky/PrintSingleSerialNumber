@@ -19,10 +19,7 @@ from models.user_model import SzvDecrypt
 class LoginServices:
     """
     Container for login-related services.
-
-    Attributes:
-        decrypter (SzvDecrypt): Handles password decryption.
-        bartender (BartenderUtils): Manages BarTender process control.
+    Provides methods for password validation and BarTender process control.
     """
 
     def __init__(self, config: configparser.ConfigParser, messenger: Messenger):
@@ -33,5 +30,23 @@ class LoginServices:
             config (ConfigParser): Loaded configuration file.
             messenger (Messenger): Messenger instance for user feedback.
         """
-        self.decrypter = SzvDecrypt()
-        self.bartender = BartenderUtils(messenger=messenger, config=config)
+        self._decrypter = SzvDecrypt()
+        self._bartender = BartenderUtils(messenger=messenger, config=config)
+
+    def check_login(self, password: str) -> bool:
+        """
+        Checks whether the given password is valid using the decryption service.
+
+        Args:
+            password (str): The password to validate.
+
+        Returns:
+            bool: True if valid, False otherwise.
+        """
+        return self._decrypter.check_login(password)
+
+    def kill_bartender_processes(self):
+        """
+        Terminates any running BarTender processes.
+        """
+        self._bartender.kill_processes()

@@ -1,0 +1,129 @@
+🔍 VULTURE — nevyužitý kód
+------------------------------------------------------------
+controllers\login_controller.py:46: unused attribute 'value_prefix' (60% confidence)
+controllers\login_controller.py:64: unused attribute 'value_prefix' (60% confidence)
+controllers\print_controller.py:56: unused property 'serial_input' (60% confidence)
+controllers\print_controller.py:63: unused method 'handle_print' (60% confidence)
+controllers\print_controller.py:98: unused method 'delayed_restore_ui' (60% confidence)
+
+🧼 FLAKE8 — styl a chyby
+------------------------------------------------------------
+
+
+🧠 PYLINT — hloubková analýza
+------------------------------------------------------------
+📄 .\controllers\login_controller.py
+************* Module login_controller
+controllers\login_controller.py:27:0: R0902: Too many instance attributes (7/6) (too-many-instance-attributes)
+
+------------------------------------------------------------------
+Your code has been rated at 9.77/10 (previous run: 9.77/10, +0.00)
+
+
+📄 .\controllers\print_controller.py
+************* Module print_controller
+controllers\print_controller.py:70:8: W0107: Unnecessary pass statement (unnecessary-pass)
+
+------------------------------------------------------------------
+Your code has been rated at 9.77/10 (previous run: 9.77/10, +0.00)
+
+
+📄 .\models\user_info.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\models\user_model.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\src\main.py
+************* Module main
+src\main.py:40:0: R0902: Too many instance attributes (7/6) (too-many-instance-attributes)
+
+------------------------------------------------------------------
+Your code has been rated at 9.89/10 (previous run: 9.89/10, +0.00)
+
+
+📄 .\utils\bartender_utils.py
+************* Module bartender_utils
+utils\bartender_utils.py:17:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.33/10 (previous run: 8.00/10, +1.33)
+
+
+📄 .\utils\logger.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\login_services.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\messenger.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\path_validation.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\resource_resolver.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\single_instance.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\startup_checker.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\system_info.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\window_stack.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\views\login_window.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\views\print_window.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\views\splash_screen.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+

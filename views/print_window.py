@@ -60,40 +60,31 @@ class PrintWindow(QWidget):
 
         # 📌 Logo
         print_logo = self.resolver.resource("views/assets/print.png")
-        self.logo = QLabel(self)
+        logo = QLabel(self)
         pixmap = QPixmap(str(print_logo)).scaled(
             self.width() - 20,
             256,
             Qt.AspectRatioMode.KeepAspectRatio,
             Qt.TransformationMode.SmoothTransformation
         )
-        self.logo.setPixmap(pixmap)
-        self.logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        logo.setPixmap(pixmap)
+        logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # 📌 Serial number input
         self.serial_number_input: QLineEdit = QLineEdit()
         self.serial_number_input.setPlaceholderText('Naskenujte serial number')
+        self._style_serial_input()
 
-        # 📌 Placeholder color
-        self.palette = self.serial_number_input.palette()
-        self.placeholder_color = QColor('#757575')
-        self.palette.setColor(QPalette.ColorRole.PlaceholderText, self.placeholder_color)
-        self.serial_number_input.setPalette(self.palette)
-
-        # 🖨️ Print button
+        # 📌 Buttons
         self.print_button: QPushButton = QPushButton('Tisk')
-
-        # 📌 Back button
         self.back_button: QPushButton = QPushButton('Zpět')
-
-        # 📌 Exit button
         self.exit_button: QPushButton = QPushButton("Ukončit")
 
         # 📌 Enter triggers print
         self.serial_number_input.returnPressed.connect(self.print_button.click)
 
         # 📌 Add elements to the main layout
-        layout.addWidget(self.logo)
+        layout.addWidget(logo)
         layout.addWidget(self.serial_number_input)
         layout.addWidget(self.print_button)
 
@@ -109,6 +100,14 @@ class PrintWindow(QWidget):
         self.activateWindow()
         self.raise_()
         self.serial_number_input.setFocus()
+
+    def _style_serial_input(self):
+        """
+        Applies placeholder color styling to the serial number input field.
+        """
+        palette = self.serial_number_input.palette()
+        palette.setColor(QPalette.ColorRole.PlaceholderText, QColor('#757575'))
+        self.serial_number_input.setPalette(palette)
 
     def reset_input_focus(self):
         """

@@ -69,7 +69,7 @@ class PathValidator:
                         "Path Validation"
                     )
                     self.missing.append((key, path))
-            except Exception as e:
+            except (FileNotFoundError, ValueError, OSError, RuntimeError) as e:
                 self.logger.error("Chyba při čtení %s: %s", key, str(e))
                 self.messenger.error(f"Chyba při čtení '{key}': {e}", "Path Validation")
                 self.missing.append((key, "chyba v configu"))
@@ -85,3 +85,12 @@ class PathValidator:
 
         self.logger.info("Všechny cesty v configu jsou validní.")
         return True
+
+    def get_missing_paths(self) -> list[tuple[str, str]]:
+        """
+        Returns a list of missing or invalid paths after validation.
+
+        Returns:
+            list of (key, path): Missing or invalid entries.
+        """
+        return self.missing
