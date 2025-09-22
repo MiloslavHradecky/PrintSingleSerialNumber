@@ -74,3 +74,19 @@ class ConfigReader:
             str: BarTender executable path.
         """
         return self.get_value("Paths", "bartender_path")
+
+    def get_all_labels(self) -> dict[str, tuple[str, str]]:
+        """
+        Retrieves all label definitions from the config.
+
+        Returns:
+            dict: {label_key: (template_path, printer_name)}
+        """
+        label_map = {}
+        if self.config.has_section("Labels"):
+            for key in self.config["Labels"]:
+                raw = self.config.get("Labels", key)
+                if "|" in raw:
+                    path, printer = raw.split("|", maxsplit=1)
+                    label_map[key] = (path.strip(), printer.strip())
+        return label_map

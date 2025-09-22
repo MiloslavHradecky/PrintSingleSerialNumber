@@ -12,5 +12,7 @@ pyqt6-qt6==6.9.2
     # via pyqt6
 pyqt6-sip==13.10.2
     # via pyqt6
+pywin32==311
+    # via -r requirements.in
 qtwidgets==1.1
     # via -r requirements.in
