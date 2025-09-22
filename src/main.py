@@ -62,14 +62,14 @@ class AppLauncher:
         """
         Prepares the application environment before launch.
         """
-        self.startup_checker.ensure_logs_dir()
         self._add_blank_line_to_log()
+        log_system_info(self.version)
         self._check_single_instance()
+        self._validate_config_paths()
+        self.startup_checker.ensure_logs_dir()
+        self.startup_checker.check_config_or_exit()
         self._create_qt_app()
         self._apply_global_stylesheet()
-        log_system_info(self.version)
-        self.startup_checker.check_config_or_exit()
-        self._validate_config_paths()
 
     def run(self):
         """

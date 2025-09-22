@@ -20,6 +20,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit
 from PyQt6.QtGui import QPalette, QColor, QPixmap, QIcon
 
 # 🧠 First-party (project-specific)
+from utils.config_reader import ConfigReader
 from utils.resource_resolver import ResourceResolver
 
 
@@ -41,8 +42,11 @@ class PrintWindow(QWidget):
         self.resolver = ResourceResolver()
         self.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
 
+        config = ConfigReader()
+        title = config.get_window_title()
+
         # 🪟 Title and size
-        self.setWindowTitle("Print Line B")
+        self.setWindowTitle(title)
         self.setFixedSize(400, 500)
         self.setWindowFlag(Qt.WindowType.WindowCloseButtonHint, False)
 

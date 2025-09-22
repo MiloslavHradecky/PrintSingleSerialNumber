@@ -20,6 +20,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton
 from PyQt6.QtGui import QPalette, QColor, QPixmap, QIcon
 
 # 🧠 First-party (project-specific)
+from utils.config_reader import ConfigReader
 from utils.resource_resolver import ResourceResolver
 
 
@@ -42,8 +43,11 @@ class LoginWindow(QWidget):
         self.resolver = ResourceResolver()
         self.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
 
+        config = ConfigReader()
+        title = config.get_window_title()
+
         # 📌 Setting the window name and size
-        self.setWindowTitle("Přihlášení")
+        self.setWindowTitle(title)
         self.setFixedSize(400, 500)
 
         self.setWindowFlag(Qt.WindowType.WindowCloseButtonHint, False)
