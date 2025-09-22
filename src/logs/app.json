@@ -1,0 +1,5 @@
+{"timestamp": "2025-09-22 23:47:11,056", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 23:47:11,060", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 23:47:11,061", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 23:47:11,061", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 23:47:27,814", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}

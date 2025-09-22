@@ -35,7 +35,7 @@ a = Analysis(
         ('utils/', 'utils'),
         ('views/', 'views'),
     ],
-    hiddenimports=['logging.handlers', 'platform'],
+    hiddenimports=['logging.handlers', 'platform', 'win32com', 'win32com.client', 'win32print'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

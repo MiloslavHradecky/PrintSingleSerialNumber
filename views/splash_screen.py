@@ -11,6 +11,7 @@ from PyQt6.QtGui import QPixmap, QIcon, QPainter
 from PyQt6.QtCore import Qt, QTimer
 
 # 🧠 First-party (project-specific)
+from utils.config_reader import ConfigReader
 from utils.resource_resolver import ResourceResolver
 
 
@@ -73,6 +74,12 @@ class CustomSplash(QWidget):
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
+
+        config = ConfigReader()
+        title = config.get_window_title()
+
+        # 📌 Setting the window name and size
+        self.setWindowTitle(title)
         self.setFixedSize(600, 400)
 
         # 🧩 Set window icon using resource_path for compatibility
