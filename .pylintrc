@@ -22,3 +22,6 @@ max-returns=6
 max-statements=50
 max-branches=12
 max-parents=3
+
+[TYPECHECK]
+extension-pkg-allow-list=win32print

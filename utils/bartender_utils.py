@@ -83,7 +83,10 @@ class BartenderUtils:
         if not bartender_path.exists():
             self.logger.error("BarTender nebyl nalezen: %s", bartender_path)
             if self.messenger:
-                self.messenger.error(f"BarTender nebyl nalezen: {bartender_path}", "Bartender Utils")
+                self.messenger.error(
+                    f"BarTender nebyl nalezen: {bartender_path}",
+                    "Bartender Utils"
+                )
             return
 
         command = (

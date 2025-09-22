@@ -1,11 +1,13 @@
 """
 📦 Module: print_controller.py
 
-Manages print operations in the PackingLine application.
+Coordinates the label printing workflow in the PackingLine application.
 
-Handles serial validation, .lbl parsing, and dynamic printing logic
-based on configuration mappings. Supports multiple product types and protocols
-(product, control4, my2n), and interacts with the PrintWindow UI.
+Handles serial input validation, label preparation, printer assignment,
+and execution of BarTender print commands. Integrates with the PrintWindow UI
+and supports dynamic configuration of label paths, printers, and copy counts.
+
+Designed for audit clarity, modularity, and seamless user interaction.
 
 Author: Miloslav Hradecky
 """
@@ -31,14 +33,11 @@ from views.print_window import PrintWindow
 
 
 class PrintController:
-    """
-    Coordinates print logic, UI interaction, and trigger-based workflows.
-    """
+    """Handles label printing, UI events, and config-driven workflows."""
 
     def __init__(self, window_stack):
-        """
-        Initializes print controller, services, and connects UI signals.
-        """
+        """Initializes controller, services, and connects UI buttons."""
+
         # 📌 Loading the configuration file
         resolver = ResourceResolver()
         config_path = resolver.config()
@@ -61,30 +60,18 @@ class PrintController:
 
     @property
     def serial_input(self) -> str:
-        """
-        Returns trimmed, uppercase serial number from input field.
-        """
+        """Returns cleaned serial number from input field."""
+
         return self.print_window.serial_number_input.text().strip().upper()
 
     def write_to_label_csv(self, serial_number: str, label_path: str):
-        """
-        Writes the serial number and current date to label.csv in the label's directory.
+        """Saves serial number and date to label.csv next to the label file."""
 
-        Args:
-            serial_number (str): The serial number entered by the user.
-            label_path (str): Full path to the .btw label template.
-        """
-        # 📂 Získání složky, kde je etiketa
         label_file = Path(label_path)
         csv_path = label_file.parent / "label.csv"
-
-        # 📅 Aktuální datum ve formátu YYYY-MM-DD
         today = datetime.today().strftime("%Y-%m-%d")
-
-        # 🧾 Záznam, který chceme přidat
         row = [serial_number, today]
 
-        # 🖊️ Zápis do souboru
         try:
             with csv_path.open(mode="w", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f, delimiter=";")
@@ -95,9 +82,8 @@ class PrintController:
             self.messenger.error("Nepodařilo se zapsat do label.csv", "Print Ctrl")
 
     def print_button_click(self):
-        """
-        Main print workflow triggered by user.
-        """
+        """Main workflow triggered by print button."""
+
         serial = self.serial_input
         labels = self.config_reader.get_all_labels()
 
@@ -108,20 +94,31 @@ class PrintController:
         for label_key, (label_path, printer, copies) in labels.items():
             if not label_path:
                 self.logger.warning("Etiketa '%s' nemá definovanou cestu.", label_key)
-                self.messenger.warning(f"Etiketa {label_key} není definována v config.ini", "Print Ctrl")
-                continue
+                self.messenger.warning(
+                    f"Etiketa {label_key} není definována v config.ini",
+                    "Print Ctrl"
+                )
+                return
 
-            # 🖨️ Nastavení tiskárny v etiketě
-            success = set_printer_in_label(label_path, printer)
+            success = set_printer_in_label(
+                label_path,
+                printer,
+                logger=self.logger,
+                messenger=self.messenger
+            )
             if not success:
-                self.logger.warning("Tiskárnu '%s' se nepodařilo nastavit v etiketě '%s'", printer, label_path)
-                self.messenger.warning(f"Tiskárnu {printer} se nepodařilo nastavit v etiketě {label_key}", "Print Ctrl")
-                continue
+                self.logger.warning(
+                    "Tiskárnu '%s' se nepodařilo nastavit v etiketě '%s'",
+                    printer,
+                    label_path
+                )
+                self.messenger.warning(
+                    f"Tiskárnu {printer} se nepodařilo nastavit v etiketě {label_key}",
+                    "Print Ctrl"
+                )
+                return
 
-            # 🧾 Zápis dat do label.csv
             self.write_to_label_csv(serial, label_path)
-
-            # 🖨️ Tisk etikety
             self.bartender_utils.print_label(label_path, printer, copies)
 
         self.print_window.disable_inputs()
@@ -129,16 +126,14 @@ class PrintController:
         self.restore_ui()
 
     def handle_back(self):
-        """
-        Closes the product window and returns to the previous window in the stack.
-        """
+        """Returns to previous window in the stack."""
+
         self.print_window.close()
         self.window_stack.show_previous()
 
     def handle_exit(self):
-        """
-        Terminates the application and fades out the product window.
-        """
+        """Closes app and terminates BarTender processes."""
+
         self.logger.info("Aplikace byla ukončena uživatelem.")
         self.bartender_utils.kill_processes()
         self.window_stack.mark_exiting()
@@ -146,7 +141,6 @@ class PrintController:
         QCoreApplication.instance().quit()
 
     def restore_ui(self, delay_ms=3000):
-        """
-        Restores UI controls after a longer delay (default 3000 ms).
-        """
+        """Re-enables UI inputs after a delay."""
+
         QTimer.singleShot(delay_ms,  self.print_window.restore_inputs)
