@@ -105,10 +105,7 @@ class PrintController:
             self.messenger.warning("Zadejte sériové číslo.", "Print Ctrl")
             return
 
-        self.print_window.disable_inputs()
-        self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
-
-        for label_key, (label_path, printer) in labels.items():
+        for label_key, (label_path, printer, copies) in labels.items():
             if not label_path:
                 self.logger.warning("Etiketa '%s' nemá definovanou cestu.", label_key)
                 self.messenger.warning(f"Etiketa {label_key} není definována v config.ini", "Print Ctrl")
@@ -125,8 +122,10 @@ class PrintController:
             self.write_to_label_csv(serial, label_path)
 
             # 🖨️ Tisk etikety
-            self.bartender_utils.print_label(label_path, printer)
+            self.bartender_utils.print_label(label_path, printer, copies)
 
+        self.print_window.disable_inputs()
+        self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
         self.restore_ui()
 
     def handle_back(self):

@@ -505,3 +505,65 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-22 21:09:35,227 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
 2025-09-22 21:09:43,091 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
 2025-09-22 21:10:03,081 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:13:07,491 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:13:07,497 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:13:07,497 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:13:07,498 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:13:17,242 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:13:53,803 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:14:14,554 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:16:02,659 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:16:02,664 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:16:02,664 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:16:02,664 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:16:11,595 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+
+2025-09-22 22:17:12,014 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:17:12,020 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:17:12,020 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:17:12,021 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:17:20,994 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:19:21,079 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:19:25,721 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:20:02,126 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:20:02,132 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:20:02,132 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:20:02,133 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:20:10,649 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:20:42,178 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:20:47,217 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:36:08,609 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:36:08,614 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:36:08,615 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:36:08,615 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:36:18,036 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:36:23,751 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:36:44,270 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:39:29,248 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:39:29,253 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:39:29,254 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:39:29,254 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:39:37,885 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:39:45,087 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:39:53,781 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:42:29,858 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:42:29,863 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:42:29,863 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:42:29,864 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:42:40,239 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:42:47,128 | ERROR   | BartenderUtils          | Chyba při tisku BarTenderem: Command ''C:\Program Files (x86)\Seagull\BarTender Suite\bartend.exe' /P /AF='T:\Prikazy\DataTPV\PrintSingleSN\Etikety\50x45_SN.btw' /C=3 /X' returned non-zero exit status 1.
+2025-09-22 22:43:29,499 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 22:44:02,981 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-22 22:44:02,986 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 22:44:02,987 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 22:44:02,987 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 22:44:11,534 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 22:44:19,550 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → OneNote
+2025-09-22 22:44:45,379 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.

@@ -56,7 +56,7 @@ class BartenderUtils:
                     "Bartender Utils"
                 )
 
-    def print_label(self, label_path: str, printer_name: str):
+    def print_label(self, label_path: str, printer_name: str, copies: int = 1):
         """
         Launches BarTender to print a label using the specified printer.
 
@@ -86,15 +86,16 @@ class BartenderUtils:
                 self.messenger.error(f"BarTender nebyl nalezen: {bartender_path}", "Bartender Utils")
             return
 
-        command = [
-            str(bartender_path),
-            "/AF", str(label_file),
-            "/P",
-            "/X"
-        ]
+        command = (
+            f'"{bartender_path}" '
+            f'/P '
+            f'/AF="{label_file}" '
+            f'/C={copies} '
+            f'/X'
+        )
 
         try:
-            subprocess.run(command, check=True)
+            subprocess.run(command, shell=True, check=True)
             self.logger.info("Etiketa vytisknuta: %s → %s", label_file.name, printer_name)
         except subprocess.CalledProcessError as e:
             self.logger.error("Chyba při tisku BarTenderem: %s", str(e))

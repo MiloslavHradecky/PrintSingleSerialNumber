@@ -75,18 +75,17 @@ class ConfigReader:
         """
         return self.get_value("Paths", "bartender_path")
 
-    def get_all_labels(self) -> dict[str, tuple[str, str]]:
+    def get_all_labels(self) -> dict:
         """
-        Retrieves all label definitions from the config.
-
-        Returns:
-            dict: {label_key: (template_path, printer_name)}
+        Parses all label entries from config and returns a dict:
+        {label_key: (label_path, printer, copies)}
         """
-        label_map = {}
-        if self.config.has_section("Labels"):
-            for key in self.config["Labels"]:
-                raw = self.config.get("Labels", key)
-                if "|" in raw:
-                    path, printer = raw.split("|", maxsplit=1)
-                    label_map[key] = (path.strip(), printer.strip())
-        return label_map
+        labels = {}
+        for key in self.config.options("Labels"):
+            raw = self.config.get("Labels", key)
+            parts = raw.split("|")
+            label_path = parts[0].strip()
+            printer = parts[1].strip() if len(parts) > 1 else ""
+            copies = int(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 1
+            labels[key] = (label_path, printer, copies)
+        return labels

@@ -403,3 +403,57 @@
 {"timestamp": "2025-09-22 21:09:35,227", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
 {"timestamp": "2025-09-22 21:09:43,091", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
 {"timestamp": "2025-09-22 21:10:03,081", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:13:07,491", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:13:07,497", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:13:07,497", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:13:07,498", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:13:17,242", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:13:53,803", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:14:14,554", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:16:02,659", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:16:02,664", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:16:02,664", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:16:02,664", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:16:11,595", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:17:12,014", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:17:12,020", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:17:12,020", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:17:12,021", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:17:20,994", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:19:21,079", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:19:25,721", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:20:02,126", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:20:02,132", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:20:02,132", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:20:02,133", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:20:10,649", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:20:42,178", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:20:47,217", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:36:08,609", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:36:08,614", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:36:08,615", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:36:08,615", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:36:18,036", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:36:23,751", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:36:44,270", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:39:29,248", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:39:29,253", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:39:29,254", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:39:29,254", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:39:37,885", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:39:45,087", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:39:53,781", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:42:29,858", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:42:29,863", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:42:29,863", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:42:29,864", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:42:40,239", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:42:47,128", "level": "ERROR", "module": "BartenderUtils", "message": "Chyba při tisku BarTenderem: Command ''C:\\Program Files (x86)\\Seagull\\BarTender Suite\\bartend.exe' /P /AF='T:\\Prikazy\\DataTPV\\PrintSingleSN\\Etikety\\50x45_SN.btw' /C=3 /X' returned non-zero exit status 1."}
+{"timestamp": "2025-09-22 22:43:29,499", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 22:44:02,981", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-22 22:44:02,986", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 22:44:02,987", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 22:44:02,987", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 22:44:11,534", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-22 22:44:19,550", "level": "INFO", "module": "BartenderUtils", "message": "Etiketa vytisknuta: 50x45_SN.btw → OneNote"}
+{"timestamp": "2025-09-22 22:44:45,379", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}

@@ -19,7 +19,7 @@ config["Paths"] = {
 }
 
 config["Labels"] = {
-    "label01": "T:/Prikazy/DataTPV/PrintSingleSN/Etikety/50x45_SN.btw|50x45_ZD621",
+    "label01": "T:/Prikazy/DataTPV/PrintSingleSN/Etikety/50x45_SN.btw|50x45_ZD621|2",
 }
 
 # 🧪 For testing: preview config content
