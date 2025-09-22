@@ -290,3 +290,54 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-21 23:41:33,546 | WARNING | SzvDecrypt              | Zadané heslo () nebylo nalezeno v souboru (T:\Prikazy\DataTPV\SZV.dat).
 2025-09-21 23:41:33,546 | WARNING | LoginController         | Zadané heslo '' není správné!
 2025-09-21 23:41:36,700 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 10:13:14,867 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 10:13:14,873 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 10:13:14,972 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 10:13:28,866 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 10:14:03,231 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:04,049 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:04,715 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:05,379 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:06,060 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:06,720 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:21,794 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:22,523 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:23,267 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:23,937 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:25,173 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:25,855 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:29,187 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:29,850 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:32,335 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+2025-09-22 10:14:35,284 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 10:34:48,769 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 10:34:48,775 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 10:34:48,795 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 10:34:58,233 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 10:35:05,218 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 10:52:58,165 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 10:52:58,171 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 10:52:58,190 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 10:53:08,349 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+
+2025-09-22 10:56:15,234 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 10:56:15,240 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 10:56:15,258 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 10:56:25,668 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 10:56:45,669 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 11:04:38,472 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 11:04:38,478 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 11:04:38,497 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 11:04:58,425 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 11:05:05,376 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 11:07:32,442 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 11:07:32,447 | INFO    | ConfigFileChecker       | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 11:07:32,467 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 11:07:45,923 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 11:07:56,436 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-22 11:07:59,725 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.

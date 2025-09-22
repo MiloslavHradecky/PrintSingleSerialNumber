@@ -152,6 +152,9 @@ class AppLauncher:
         while splash.isVisible():
             self.app.processEvents()
 
+        # 🎯 Now show login window
+        self.window_stack.push(login_window)
+
     def shutdown(self):
         """
         Cleans up resources before application exit.

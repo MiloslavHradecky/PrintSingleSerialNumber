@@ -49,6 +49,18 @@ class WindowStackManager:
         window.destroyed.connect(self._on_window_closed)
         window.show()
 
+    def show_previous(self):
+        """
+        Shows the previous window in the stack without removing the current one.
+
+        Useful for manual navigation (e.g. 'Back' button).
+        """
+        if len(self._stack) >= 2 and not self._is_exiting:
+            current = self._stack[-1]
+            previous = self._stack[-2]
+            current.hide()
+            previous.show()
+
     def pop(self):
         """
         Removes the top window from the stack and restores the previous one if applicable.

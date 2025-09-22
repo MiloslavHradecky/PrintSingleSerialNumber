@@ -21,6 +21,8 @@ from utils.messenger import Messenger
 from utils.login_services import LoginServices
 from utils.resource_resolver import ResourceResolver
 
+from controllers.print_controller import PrintController
+
 
 class LoginController:
     """
@@ -41,7 +43,7 @@ class LoginController:
         # 📌 Initialization
         self.login_window = login_window
         self.window_stack = window_stack
-        self.work_order_controller = None
+        self.print_controller = None
         self.value_prefix = None
         self.logger = get_logger("LoginController")
         self.messenger = Messenger(self.login_window)
@@ -62,7 +64,7 @@ class LoginController:
             if self.services.decrypter.check_login(password):
                 self.value_prefix = models.user_model.get_value_prefix()
                 self.services.bartender.kill_processes()
-                # self.open_work_order_window()
+                self.open_print_window()
             else:
                 self.logger.warning("Zadané heslo '%s' není správné!", password)
                 self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
@@ -72,13 +74,12 @@ class LoginController:
             self.messenger.error(str(e), "Login Ctrl")
             self.login_window.reset_password_input()
 
-    # def open_work_order_window(self):
-    #     """
-    #     Instantiates and opens the WorkOrderController window.
-    #     """
-    #     from controllers.work_order_controller import WorkOrderController
-    #     self.work_order_controller = WorkOrderController(self.window_stack)
-    #     self.window_stack.push(self.work_order_controller.work_order_window)
+    def open_print_window(self):
+        """
+        Instantiates and opens the WorkOrderController window.
+        """
+        self.print_controller = PrintController(self.window_stack)
+        self.window_stack.push(self.print_controller.print_window)
 
     def handle_exit(self):
         """
