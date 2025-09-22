@@ -5,6 +5,9 @@ controllers\login_controller.py:64: unused attribute 'value_prefix' (60% confide
 controllers\print_controller.py:56: unused property 'serial_input' (60% confidence)
 controllers\print_controller.py:63: unused method 'handle_print' (60% confidence)
 controllers\print_controller.py:98: unused method 'delayed_restore_ui' (60% confidence)
+utils\config_reader.py:51: unused method 'get_orders_path' (60% confidence)
+utils\config_reader.py:60: unused method 'get_szv_input_file' (60% confidence)
+utils\config_reader.py:69: unused method 'get_bartender_path' (60% confidence)
 
 🧼 FLAKE8 — styl a chyby
 ------------------------------------------------------------
@@ -13,11 +16,9 @@ controllers\print_controller.py:98: unused method 'delayed_restore_ui' (60% conf
 🧠 PYLINT — hloubková analýza
 ------------------------------------------------------------
 📄 .\controllers\login_controller.py
-************* Module login_controller
-controllers\login_controller.py:27:0: R0902: Too many instance attributes (7/6) (too-many-instance-attributes)
 
-------------------------------------------------------------------
-Your code has been rated at 9.77/10 (previous run: 9.77/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\controllers\print_controller.py
@@ -41,11 +42,9 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\src\main.py
-************* Module main
-src\main.py:40:0: R0902: Too many instance attributes (7/6) (too-many-instance-attributes)
 
-------------------------------------------------------------------
-Your code has been rated at 9.89/10 (previous run: 9.89/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\bartender_utils.py
@@ -53,7 +52,13 @@ Your code has been rated at 9.89/10 (previous run: 9.89/10, +0.00)
 utils\bartender_utils.py:17:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.33/10 (previous run: 8.00/10, +1.33)
+Your code has been rated at 9.33/10 (previous run: 9.33/10, +0.00)
+
+
+📄 .\utils\config_reader.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.89/10, +2.11)
 
 
 📄 .\utils\logger.py

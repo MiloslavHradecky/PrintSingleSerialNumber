@@ -40,13 +40,37 @@ class ConfigReader:
         return self.config.get(section, key, fallback=fallback)
 
     def get_window_title(self) -> str:
+        """
+        Retrieves the application window title from the config file.
+
+        Returns:
+            str: Window title or fallback if missing.
+        """
         return self.get_value("Window", "title", fallback="Chybí titulek app v config!")
 
     def get_orders_path(self) -> str:
+        """
+        Retrieves the path to the orders directory from the config file.
+
+        Returns:
+            str: Orders path.
+        """
         return self.get_value("Paths", "orders_path")
 
     def get_szv_input_file(self) -> str:
+        """
+        Retrieves the path to the SZV input file from the config file.
+
+        Returns:
+            str: SZV input file path.
+        """
         return self.get_value("Paths", "szv_input_file")
 
     def get_bartender_path(self) -> str:
+        """
+        Retrieves the path to the BarTender executable from the config file.
+
+        Returns:
+            str: BarTender executable path.
+        """
         return self.get_value("Paths", "bartender_path")
