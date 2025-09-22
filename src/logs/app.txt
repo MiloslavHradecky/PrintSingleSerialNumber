@@ -387,3 +387,9 @@ NameError: name 'login_window' is not defined. Did you mean: 'LoginWindow'?
 2025-09-22 16:09:48,664 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
 2025-09-22 16:09:48,665 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
 2025-09-22 16:09:57,977 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-22 16:45:45,844 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26
+2025-09-22 16:45:45,861 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-22 16:45:45,862 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-22 16:45:45,863 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-22 16:45:54,326 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.

@@ -301,3 +301,8 @@
 {"timestamp": "2025-09-22 16:09:48,664", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
 {"timestamp": "2025-09-22 16:09:48,665", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
 {"timestamp": "2025-09-22 16:09:57,977", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-22 16:45:45,844", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.26"}
+{"timestamp": "2025-09-22 16:45:45,861", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-22 16:45:45,862", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-22 16:45:45,863", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-22 16:45:54,326", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}

@@ -18,6 +18,10 @@ config["Paths"] = {
     "bartender_path": "C:/Program Files (x86)/Seagull/BarTender Suite/bartend.exe",
 }
 
+config["Labels"] = {
+    "label01": "T:/Prikazy/DataTPV/PrintSingleSN/Etikety/50x45_SN.btw|50x45_ZD621",
+}
+
 # 🧪 For testing: preview config content
 configfile = StringIO()
 config.write(configfile)
