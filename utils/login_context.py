@@ -1,5 +1,13 @@
-# 📦 Module: login_context.py
+"""
+📦 Module: login_context.py
 
+Provides a shared context for LoginController, bundling logger, messenger,
+configuration reader, and service utilities into a single access point.
+
+Author: Miloslav Hradecky
+"""
+
+# 🧠 First-party (project-specific)
 from utils.logger import get_logger
 from utils.messenger import Messenger
 from utils.config_reader import ConfigReader
@@ -7,7 +15,7 @@ from utils.login_services import LoginServices
 from utils.bartender_utils import BartenderUtils
 
 
-class LoginContext:
+class LoginContext:  # pylint: disable=too-few-public-methods
     """
     Holds shared services and configuration for LoginController.
     """

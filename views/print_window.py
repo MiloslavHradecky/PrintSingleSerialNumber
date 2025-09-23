@@ -16,8 +16,15 @@ Author: Miloslav Hradecky
 
 # 🧩 Third-party libraries
 from PyQt6.QtCore import Qt
-from PyQt6 import QtWidgets
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton
+from PyQt6.QtWidgets import (
+    QApplication,
+    QWidget,
+    QVBoxLayout,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QPushButton
+)
 from PyQt6.QtGui import QPalette, QColor, QPixmap, QIcon
 
 # 🧠 First-party (project-specific)
@@ -129,7 +136,7 @@ class PrintWindow(QWidget):
         self.back_button.setDisabled(True)
         self.exit_button.setDisabled(True)
         self.serial_number_input.setDisabled(True)
-        QtWidgets.QApplication.processEvents()
+        QApplication.processEvents()
 
     def restore_inputs(self):
         """

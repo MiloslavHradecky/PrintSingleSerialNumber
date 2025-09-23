@@ -1,31 +1,23 @@
 🔍 VULTURE — nevyužitý kód
 ------------------------------------------------------------
-controllers\login_controller.py:49: unused attribute 'value_prefix' (60% confidence)
-controllers\login_controller.py:68: unused attribute 'value_prefix' (60% confidence)
-utils\config_reader.py:51: unused method 'get_szv_input_file' (60% confidence)
-utils\config_reader.py:60: unused method 'get_bartender_path' (60% confidence)
+
 
 🧼 FLAKE8 — styl a chyby
 ------------------------------------------------------------
-.\controllers\print_controller.py:139:101: E501 line too long (110 > 100 characters)
-.\utils\config_reader.py:83:101: E501 line too long (113 > 100 characters)
+
 
 🧠 PYLINT — hloubková analýza
 ------------------------------------------------------------
 📄 .\controllers\login_controller.py
-************* Module login_controller
-controllers\login_controller.py:30:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
 
--------------------------------------------------------------------
-Your code has been rated at 9.80/10 (previous run: 10.00/10, -0.20)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\controllers\print_controller.py
-************* Module print_controller
-controllers\print_controller.py:139:0: C0301: Line too long (110/100) (line-too-long)
 
-------------------------------------------------------------------
-Your code has been rated at 9.89/10 (previous run: 9.77/10, +0.12)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\models\user_info.py
@@ -48,20 +40,23 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 📄 .\utils\bartender_utils.py
 
--------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 9.33/10, +0.67)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\config_reader.py
-************* Module config_reader
-utils\config_reader.py:83:0: C0301: Line too long (113/100) (line-too-long)
-utils\config_reader.py:90:16: W0707: Consider explicitly re-raising using 'except ValueError as exc' and 'raise ValueError(f"Etiketa '{key}' má nečíselný počet kopií: '{parts[2]}'") from exc' (raise-missing-from)
 
--------------------------------------------------------------------
-Your code has been rated at 9.41/10 (previous run: 10.00/10, -0.59)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\logger.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+📄 .\utils\login_context.py
 
 --------------------------------------------------------------------
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
@@ -93,8 +88,8 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 📄 .\utils\set_printer.py
 
-------------------------------------
-Your code has been rated at 10.00/10
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\utils\single_instance.py
@@ -128,11 +123,9 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\views\print_window.py
-************* Module print_window
-views\print_window.py:132:8: I1101: Module 'PyQt6.QtWidgets' has no 'QApplication' member, but source is unavailable. Consider adding this module to extension-pkg-allow-list if you want to perform analysis based on run-time introspection of living objects. (c-extension-no-member)
 
---------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.84/10, +0.16)
 
 
 📄 .\views\splash_screen.py

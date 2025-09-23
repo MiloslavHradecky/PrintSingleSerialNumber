@@ -62,14 +62,16 @@ class ConfigReader:
             parts = raw.split("|")
 
             if len(parts) != 3:
-                raise ValueError(f"Etiketa '{key}' má neplatný formát: '{raw}' (očekáváno: path|printer|copies)")
+                raise ValueError(
+                    f"Etiketa '{key}' má neplatný formát: '{raw}' (očekáváno: path|printer|copies)"
+                )
 
             label_path = parts[0].strip()
             printer = parts[1].strip()
             try:
                 copies = int(parts[2])
-            except ValueError:
-                raise ValueError(f"Etiketa '{key}' má nečíselný počet kopií: '{parts[2]}'")
+            except ValueError as exc:
+                raise ValueError(f"Etiketa '{key}' má nečíselný počet kopií: '{parts[2]}'") from exc
 
             labels[key] = (label_path, printer, copies)
 
@@ -82,35 +84,13 @@ class ConfigReader:
         """
         return ConfigReader()
 
-    def get_path(self, key: str) -> str:
-        """
-        Retrieves a path from the [Paths] section.
-
-        Args:
-            key (str): Key name within [Paths]
-
-        Returns:
-            str: Path value
-
-        Raises:
-            ValueError: If key is missing
-        """
-        if not self.config.has_option("Paths", key):
-            raise ValueError(f"Klíč '{key}' chybí v sekci [Paths]")
-        return self.config.get("Paths", key)
-
     # 🧪 Optional validation (currently unused)
+    # def get_path(self, key: str) -> str:
+    #     if not self.config.has_option("Paths", key):
+    #         raise ValueError(f"Klíč '{key}' chybí v sekci [Paths]")
+    #     return self.config.get("Paths", key)
+
     # def validate_required_sections(self, required: list[str]) -> None:
-    #     """
-    #     Validates that all required sections exist in the config.
-    #
-    #     Args:
-    #         required (list[str]): List of section names to validate.
-    #
-    #     Raises:
-    #         ValueError: If any section is missing.
-    #     """
     #     missing = [s for s in required if not self.config.has_section(s)]
     #     if missing:
     #         raise ValueError(f"Chybějící sekce v config.ini: {', '.join(missing)}")
-
