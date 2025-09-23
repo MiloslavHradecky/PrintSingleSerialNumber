@@ -9,20 +9,13 @@ Interacts with the LoginWindow UI and launches the WorkOrderController upon succ
 Author: Miloslav Hradecky
 """
 
-# 🧱 Standard library
-import configparser
-
 # 🧩 Third-party libraries
 from PyQt6.QtCore import QCoreApplication
 
 # 🧠 First-party (project-specific)
 import models.user_model
 
-from utils.logger import get_logger
-from utils.messenger import Messenger
-from utils.login_services import LoginServices
-from utils.bartender_utils import BartenderUtils
-from utils.resource_resolver import ResourceResolver
+from utils.login_context import LoginContext
 
 from controllers.print_controller import PrintController
 
@@ -36,21 +29,10 @@ class LoginController:
         """
         Initializes login logic, UI bindings, and supporting services.
         """
-        # 📌 Loading the configuration file
-        resolver = ResourceResolver()
-        config_path = resolver.config()
-        self.config = configparser.ConfigParser()
-        self.config.optionxform = str  # 💡 Ensures letter size is maintained
-        self.config.read(config_path)
-
-        # 📌 Initialization
         self.login_window = login_window
         self.window_stack = window_stack
         self.value_prefix = None
-        self.logger = get_logger("LoginController")
-        self.messenger = Messenger(self.login_window)
-        self.services = LoginServices(config=self.config, messenger=self.messenger)
-        self.bartender_utils = BartenderUtils(messenger=self.messenger, config=self.config)
+        self.context = LoginContext(login_window)
 
         # 📌 Linking the button to the method
         self.login_window.login_button.clicked.connect(self.handle_login)
@@ -64,17 +46,17 @@ class LoginController:
         self.login_window.clear_password()
 
         try:
-            if self.services.check_login(password):
+            if self.context.services.check_login(password):
                 self.value_prefix = models.user_model.get_value_prefix()
-                self.services.kill_bartender_processes()
+                self.context.services.kill_bartender_processes()
                 self.open_print_window()
             else:
-                self.logger.warning("Zadané heslo '%s' není správné!", password)
-                self.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
+                self.context.logger.warning("Zadané heslo '%s' není správné!", password)
+                self.context.messenger.warning("Zadané heslo není správné!", "Login Ctrl")
                 self.login_window.reset_password_input()
         except (FileNotFoundError, ValueError, OSError, RuntimeError) as e:
-            self.logger.error("Neočekávaný problém: %s", str(e))
-            self.messenger.error(str(e), "Login Ctrl")
+            self.context.logger.error("Neočekávaný problém: %s", str(e))
+            self.context.messenger.error(str(e), "Login Ctrl")
             self.login_window.reset_password_input()
 
     def open_print_window(self):
@@ -88,8 +70,8 @@ class LoginController:
         """
         Closes the LoginWindow and exits the application.
         """
-        self.logger.info("Aplikace byla ukončena uživatelem.")
-        self.bartender_utils.kill_processes()
+        self.context.logger.info("Aplikace byla ukončena uživatelem.")
+        self.context.bartender_utils.kill_processes()
         self.window_stack.mark_exiting()
         self.login_window.close()
         QCoreApplication.instance().quit()

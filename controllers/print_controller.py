@@ -29,6 +29,8 @@ from utils.bartender_utils import BartenderUtils
 from utils.set_printer import set_printer_in_label
 from utils.resource_resolver import ResourceResolver
 
+from models.user_model import get_value_prefix
+
 from views.print_window import PrintWindow
 
 
@@ -65,17 +67,18 @@ class PrintController:
         return self.print_window.serial_number_input.text().strip().upper()
 
     def write_to_label_csv(self, serial_number: str, label_path: str):
-        """Saves serial number and date to label.csv next to the label file."""
+        """Saves serial number, date, and user prefix to label.csv next to the label file."""
 
         label_file = Path(label_path)
         csv_path = label_file.parent / "label.csv"
         today = datetime.today().strftime("%Y-%m-%d")
-        row = [serial_number, today]
+        prefix = get_value_prefix() or "?"  # fallback pro případ, že není nastaven
+        row = [serial_number, today, prefix]
 
         try:
             with csv_path.open(mode="w", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f, delimiter=";")
-                writer.writerow(["SerialNumber", "Date"])  # hlavička
+                writer.writerow(["SerialNumber", "Date", "Signature"])  # hlavička
                 writer.writerow(row)
         except (OSError, IOError) as e:
             self.logger.error("Chyba při zápisu do label.csv: %s", str(e))
@@ -136,7 +139,12 @@ class PrintController:
 
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
-            self.logger.info("Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopií)", label_key, printer, copies)
+            self.logger.info(
+                "Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopií)",
+                label_key,
+                printer,
+                copies
+            )
 
         self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
         self.restore_ui()

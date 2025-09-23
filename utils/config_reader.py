@@ -48,24 +48,6 @@ class ConfigReader:
         """
         return self.get_value("Window", "title", fallback="Chybí titulek app v config!")
 
-    def get_szv_input_file(self) -> str:
-        """
-        Retrieves the path to the SZV input file from the config file.
-
-        Returns:
-            str: SZV input file path.
-        """
-        return self.get_value("Paths", "szv_input_file")
-
-    def get_bartender_path(self) -> str:
-        """
-        Retrieves the path to the BarTender executable from the config file.
-
-        Returns:
-            str: BarTender executable path.
-        """
-        return self.get_value("Paths", "bartender_path")
-
     def get_all_labels(self) -> dict:
         """
         Parses all label entries from config and returns a dict:
@@ -92,3 +74,43 @@ class ConfigReader:
             labels[key] = (label_path, printer, copies)
 
         return labels
+
+    @staticmethod
+    def load() -> "ConfigReader":
+        """
+        Returns a fully initialized ConfigReader instance.
+        """
+        return ConfigReader()
+
+    def get_path(self, key: str) -> str:
+        """
+        Retrieves a path from the [Paths] section.
+
+        Args:
+            key (str): Key name within [Paths]
+
+        Returns:
+            str: Path value
+
+        Raises:
+            ValueError: If key is missing
+        """
+        if not self.config.has_option("Paths", key):
+            raise ValueError(f"Klíč '{key}' chybí v sekci [Paths]")
+        return self.config.get("Paths", key)
+
+    # 🧪 Optional validation (currently unused)
+    # def validate_required_sections(self, required: list[str]) -> None:
+    #     """
+    #     Validates that all required sections exist in the config.
+    #
+    #     Args:
+    #         required (list[str]): List of section names to validate.
+    #
+    #     Raises:
+    #         ValueError: If any section is missing.
+    #     """
+    #     missing = [s for s in required if not self.config.has_section(s)]
+    #     if missing:
+    #         raise ValueError(f"Chybějící sekce v config.ini: {', '.join(missing)}")
+
