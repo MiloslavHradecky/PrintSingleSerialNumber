@@ -90,17 +90,19 @@ class PrintController:
             self.messenger.warning("Zadejte sériové číslo.", "Print Ctrl")
             return
 
+        self.print_window.disable_inputs()
         try:
             labels = self.config_reader.get_all_labels()
         except ValueError as e:
             self.logger.error("Chyba v config.ini: %s", str(e))
             self.messenger.error(f"Chyba v config.ini:\n{str(e)}", "Print Ctrl")
-            self.print_window.reset_input_focus()
+            self.restore_ui()
             return
 
         if not labels:
             self.logger.warning("V config.ini nejsou definovány žádné etikety.")
             self.messenger.warning("V config.ini nejsou definovány žádné etikety.", "Print Ctrl")
+            self.restore_ui()
             return
 
         for label_key, (label_path, printer, copies) in labels.items():
@@ -110,6 +112,7 @@ class PrintController:
                     f"Etiketa {label_key} není definována v config.ini",
                     "Print Ctrl"
                 )
+                self.restore_ui()
                 return
 
             success = set_printer_in_label(
@@ -128,13 +131,13 @@ class PrintController:
                     f"Tiskárnu {printer} se nepodařilo nastavit v etiketě {label_key}",
                     "Print Ctrl"
                 )
+                self.restore_ui()
                 return
 
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
             self.logger.info("Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopií)", label_key, printer, copies)
 
-        self.print_window.disable_inputs()
         self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
         self.restore_ui()
 
