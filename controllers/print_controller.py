@@ -85,10 +85,22 @@ class PrintController:
         """Main workflow triggered by print button."""
 
         serial = self.serial_input
-        labels = self.config_reader.get_all_labels()
 
         if not serial:
             self.messenger.warning("Zadejte sériové číslo.", "Print Ctrl")
+            return
+
+        try:
+            labels = self.config_reader.get_all_labels()
+        except ValueError as e:
+            self.logger.error("Chyba v config.ini: %s", str(e))
+            self.messenger.error(f"Chyba v config.ini:\n{str(e)}", "Print Ctrl")
+            self.print_window.reset_input_focus()
+            return
+
+        if not labels:
+            self.logger.warning("V config.ini nejsou definovány žádné etikety.")
+            self.messenger.warning("V config.ini nejsou definovány žádné etikety.", "Print Ctrl")
             return
 
         for label_key, (label_path, printer, copies) in labels.items():
@@ -120,6 +132,7 @@ class PrintController:
 
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
+            self.logger.info("Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopií)", label_key, printer, copies)
 
         self.print_window.disable_inputs()
         self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)

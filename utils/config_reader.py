@@ -80,12 +80,24 @@ class ConfigReader:
         Parses all label entries from config and returns a dict:
         {label_key: (label_path, printer, copies)}
         """
+        if not self.config.has_section("Labels"):
+            raise ValueError("Sekce [Labels] chybí v config.ini")
+
         labels = {}
         for key in self.config.options("Labels"):
             raw = self.config.get("Labels", key)
             parts = raw.split("|")
+
+            if len(parts) != 3:
+                raise ValueError(f"Etiketa '{key}' má neplatný formát: '{raw}' (očekáváno: path|printer|copies)")
+
             label_path = parts[0].strip()
-            printer = parts[1].strip() if len(parts) > 1 else ""
-            copies = int(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 1
+            printer = parts[1].strip()
+            try:
+                copies = int(parts[2])
+            except ValueError:
+                raise ValueError(f"Etiketa '{key}' má nečíselný počet kopií: '{parts[2]}'")
+
             labels[key] = (label_path, printer, copies)
+
         return labels
