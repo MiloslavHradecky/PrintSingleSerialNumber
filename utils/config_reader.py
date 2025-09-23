@@ -48,15 +48,6 @@ class ConfigReader:
         """
         return self.get_value("Window", "title", fallback="Chybí titulek app v config!")
 
-    def get_orders_path(self) -> str:
-        """
-        Retrieves the path to the orders directory from the config file.
-
-        Returns:
-            str: Orders path.
-        """
-        return self.get_value("Paths", "orders_path")
-
     def get_szv_input_file(self) -> str:
         """
         Retrieves the path to the SZV input file from the config file.
