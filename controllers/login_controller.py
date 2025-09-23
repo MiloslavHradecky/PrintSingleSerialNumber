@@ -10,8 +10,10 @@ Author: Miloslav Hradecky
 """
 
 # 🧱 Standard library
-import sys
 import configparser
+
+# 🧩 Third-party libraries
+from PyQt6.QtCore import QCoreApplication
 
 # 🧠 First-party (project-specific)
 import models.user_model
@@ -19,6 +21,7 @@ import models.user_model
 from utils.logger import get_logger
 from utils.messenger import Messenger
 from utils.login_services import LoginServices
+from utils.bartender_utils import BartenderUtils
 from utils.resource_resolver import ResourceResolver
 
 from controllers.print_controller import PrintController
@@ -47,6 +50,7 @@ class LoginController:
         self.logger = get_logger("LoginController")
         self.messenger = Messenger(self.login_window)
         self.services = LoginServices(config=self.config, messenger=self.messenger)
+        self.bartender_utils = BartenderUtils(messenger=self.messenger, config=self.config)
 
         # 📌 Linking the button to the method
         self.login_window.login_button.clicked.connect(self.handle_login)
@@ -85,4 +89,7 @@ class LoginController:
         Closes the LoginWindow and exits the application.
         """
         self.logger.info("Aplikace byla ukončena uživatelem.")
-        sys.exit(1)
+        self.bartender_utils.kill_processes()
+        self.window_stack.mark_exiting()
+        self.login_window.close()
+        QCoreApplication.instance().quit()

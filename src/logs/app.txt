@@ -35,3 +35,19 @@
 2025-09-23 10:28:01,666 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
 2025-09-23 10:28:04,850 | ERROR   | PrintController         | Chyba v config.ini: Sekce [Labels] chybí v config.ini
 2025-09-23 10:28:10,784 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-23 12:26:46,971 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-23 12:26:46,990 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-23 12:26:46,991 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-23 12:26:46,992 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-23 12:26:58,492 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-23 12:27:06,577 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-23 12:27:13,518 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-23 12:27:13,536 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-23 12:27:13,537 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-23 12:27:13,538 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-23 12:27:25,857 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-23 12:27:39,117 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → 50x45_ZD621
+2025-09-23 12:27:39,117 | INFO    | PrintController         | Etiketa 'label01' úspěšně vytisknuta na '50x45_ZD621' (3 kopií)
+2025-09-23 12:27:49,811 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
