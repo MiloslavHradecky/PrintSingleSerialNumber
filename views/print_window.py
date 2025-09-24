@@ -54,7 +54,7 @@ class PrintWindow(QWidget):
 
         # 🪟 Title and size
         self.setWindowTitle(title)
-        self.setFixedSize(400, 500)
+        self.setFixedSize(360, 500)
         self.setWindowFlag(Qt.WindowType.WindowCloseButtonHint, False)
 
         # 📌 Window icon settings
@@ -62,9 +62,7 @@ class PrintWindow(QWidget):
         self.setWindowIcon(QIcon(str(icon_path)))
 
         # 📌 Setting the window background colour
-        palette = QPalette()
-        palette.setColor(QPalette.ColorRole.Window, QColor('#D8E9F3'))
-        self.setPalette(palette)
+        self.setObjectName("PrintWindow")
 
         # 🧱 Layout definition
         layout = QVBoxLayout()
@@ -73,8 +71,7 @@ class PrintWindow(QWidget):
         print_logo = self.resolver.resource("views/assets/print.png")
         logo = QLabel(self)
         pixmap = QPixmap(str(print_logo)).scaled(
-            self.width() - 20,
-            256,
+            self.width() - 20, 200,
             Qt.AspectRatioMode.KeepAspectRatio,
             Qt.TransformationMode.SmoothTransformation
         )
@@ -105,6 +102,7 @@ class PrintWindow(QWidget):
         bottom_layout.addWidget(self.exit_button)
 
         layout.addLayout(bottom_layout)
+        layout.setContentsMargins(10, 10, 10, 50)  # left, top, right, bottom
 
         # 📦 Finalize layout
         self.setLayout(layout)

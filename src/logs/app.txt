@@ -60,3 +60,106 @@
 2025-09-24 09:53:09,823 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → 50x45_ZD621
 2025-09-24 09:53:09,824 | INFO    | PrintController         | Etiketa 'label01' úspěšně vytisknuta na '50x45_ZD621' (3 kopií)
 2025-09-24 09:53:17,745 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 14:39:06,607 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 14:39:06,625 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 14:39:06,626 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 14:39:06,627 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 14:40:03,846 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 14:59:48,380 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 14:59:48,401 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 14:59:48,402 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 14:59:48,403 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:12:49,921 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:13:15,372 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:13:15,390 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:13:15,391 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:13:15,392 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:14:01,391 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 15:14:35,669 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:16:31,089 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:16:31,108 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:16:31,109 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:16:31,110 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:17:08,712 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:20:48,989 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:20:49,007 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:20:49,008 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:20:49,008 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:21:59,942 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:23:03,573 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:23:03,591 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:23:03,592 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:23:03,593 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:23:26,155 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:31:11,705 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:31:11,726 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:31:11,727 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:31:11,728 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:31:35,785 | WARNING | SzvDecrypt              | Zadané heslo (hhhjjjggfdh) nebylo nalezeno v souboru (T:\Prikazy\DataTPV\SZV.dat).
+2025-09-24 15:31:35,786 | WARNING | LoginController         | Zadané heslo 'hhhjjjggfdh' není správné!
+2025-09-24 15:32:42,273 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 15:33:02,751 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:35:37,260 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:35:37,279 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:35:37,280 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:35:37,281 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:36:23,599 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:40:00,184 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:40:00,202 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:40:00,203 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:40:00,204 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:40:22,376 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:41:47,638 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:41:47,661 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:41:47,662 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:41:47,663 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:41:58,259 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 15:42:50,326 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:43:36,956 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:43:36,976 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:43:36,977 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:43:36,977 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:44:18,469 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:58:39,417 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:58:39,436 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:58:39,437 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:58:39,438 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:59:14,201 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 15:59:20,949 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 15:59:20,965 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 15:59:20,966 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 15:59:20,967 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 15:59:53,314 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 16:02:12,121 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 16:02:12,141 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 16:02:12,142 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 16:02:12,143 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 16:02:23,549 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 16:02:46,944 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 16:02:54,298 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 16:02:54,315 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 16:02:54,316 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 16:02:54,317 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 16:03:09,581 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 16:04:37,782 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 16:05:59,150 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 16:05:59,167 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 16:05:59,168 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 16:05:59,169 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 16:12:10,433 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.

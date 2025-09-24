@@ -48,7 +48,7 @@ class LoginWindow(QWidget):
 
         # 📌 Setting the window name and size
         self.setWindowTitle(title)
-        self.setFixedSize(400, 500)
+        self.setFixedSize(360, 500)
 
         self.setWindowFlag(Qt.WindowType.WindowCloseButtonHint, False)
 
@@ -57,9 +57,7 @@ class LoginWindow(QWidget):
         self.setWindowIcon(QIcon(str(icon_path)))
 
         # 📌 Setting the window background colour
-        palette = QPalette()
-        palette.setColor(QPalette.ColorRole.Window, QColor("#D8E9F3"))
-        self.setPalette(palette)
+        self.setObjectName("LoginWindow")
 
         # 📌 Main window layout
         layout = QVBoxLayout()
@@ -68,7 +66,7 @@ class LoginWindow(QWidget):
         login_logo = self.resolver.resource("views/assets/login.tiff")
         self.logo = QLabel(self)
         pixmap = QPixmap(str(login_logo)).scaled(
-            self.width() - 20, 256,
+            self.width() - 20, 200,
             Qt.AspectRatioMode.KeepAspectRatio,
             Qt.TransformationMode.SmoothTransformation
         )
@@ -95,6 +93,7 @@ class LoginWindow(QWidget):
         layout.addWidget(self.password_input)
         layout.addWidget(self.login_button)
         layout.addWidget(self.exit_button)
+        layout.setContentsMargins(10, 10, 10, 50)  # left, top, right, bottom
 
         # 📌 Setting the window layout
         self.setLayout(layout)
@@ -107,7 +106,7 @@ class LoginWindow(QWidget):
     def _style_password_input(self):
         """Applies placeholder color styling to the password input field."""
         palette = self.password_input.palette()
-        placeholder_color = QColor("#757575")
+        placeholder_color = QColor("#FFFFFF")
         palette.setColor(QPalette.ColorRole.PlaceholderText, placeholder_color)
         self.password_input.setPalette(palette)
 
