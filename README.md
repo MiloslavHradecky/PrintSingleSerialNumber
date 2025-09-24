@@ -51,7 +51,7 @@ label2 = labels/label2.btw|Printer_Y|2
 ## 📂 Structure
 
 ```
-📦 PackingLine/
+📦 PrintSingleSerialNumber/
 │
 ├── audit/
 │   ├── audit.py
