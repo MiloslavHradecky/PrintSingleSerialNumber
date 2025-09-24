@@ -254,3 +254,9 @@
 {"timestamp": "2025-09-24 22:41:09,405", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
 {"timestamp": "2025-09-24 22:41:09,405", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
 {"timestamp": "2025-09-24 22:41:35,539", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-24 23:59:00,133", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75"}
+{"timestamp": "2025-09-24 23:59:00,159", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-24 23:59:00,159", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-24 23:59:00,160", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-24 23:59:14,147", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-25 00:00:00,340", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
