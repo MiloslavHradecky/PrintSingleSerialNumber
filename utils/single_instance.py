@@ -18,7 +18,6 @@ from PyQt6.QtCore import QSharedMemory
 class SingleInstanceChecker:
     """
     Prevents multiple instances of the application using QSharedMemory.
-
     Checks whether a shared memory block with a unique key is already attached.
     If so, assumes another instance is running.
     """
@@ -47,8 +46,6 @@ class SingleInstanceChecker:
         return False
 
     def release(self):
-        """
-        Releases the shared memory segment if it was created.
-        """
+        """Releases the shared memory segment if it was created."""
         if self.shared_memory.isAttached():
             self.shared_memory.detach()

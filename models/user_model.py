@@ -30,9 +30,7 @@ VALUE_PREFIX = None
 
 
 def get_value_prefix():
-    """
-    Returns the current global value prefix after successful login.
-    """
+    """Returns the current global value prefix after successful login."""
     return VALUE_PREFIX
 
 
@@ -43,9 +41,7 @@ class SzvDecrypt:
     """
 
     def __init__(self, config_file='config.ini'):
-        """
-        Initializes decryption logic, loads config, and prepares messenger and logger.
-        """
+        """Initializes decryption logic, loads config, and prepares messenger and logger."""
         # 📌 Loading the configuration file
         self.resolver = ResourceResolver(config_file)
         config_path = self.resolver.config()

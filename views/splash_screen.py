@@ -18,7 +18,6 @@ from utils.resource_resolver import ResourceResolver
 class PixmapFader(QLabel):
     """
     QLabel subclass used to animate the fade-in effect of a QPixmap.
-
     Useful for adding visual polish to splash screens or transitions.
     The image gradually becomes visible using a timer and alpha blending.
     """
@@ -32,15 +31,11 @@ class PixmapFader(QLabel):
         self.start_fade()
 
     def start_fade(self):
-        """
-        Starts the fade-in animation.
-        """
+        """Starts the fade-in animation."""
         self.timer.start(90)  # ⏱️ Trigger every 90 ms
 
     def fade_in(self):
-        """
-        Gradually increases image opacity to create a fade-in effect.
-        """
+        """Gradually increases image opacity to create a fade-in effect."""
         if self.alpha >= 255:
             self.timer.stop()
             return
@@ -61,15 +56,12 @@ class PixmapFader(QLabel):
 class CustomSplash(QWidget):
     """
     Custom splash screen displayed during application startup.
-
     Shows a logo with fade-in animation, a loading message, and a progress bar.
     Automatically transitions to the main window once loading is complete.
     """
 
     def __init__(self, target_window):
-        """
-        Initializes the splash screen with logo, message, and progress bar.
-        """
+        """Initializes the splash screen with logo, message, and progress bar."""
         super().__init__()
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
@@ -123,15 +115,11 @@ class CustomSplash(QWidget):
         self.counter = 0
 
     def start(self):
-        """
-        Starts the splash screen animation and shows the window.
-        """
+        """Starts the splash screen animation and shows the window."""
         self.show()
 
     def handle_timer(self):
-        """
-        Updates progress bar and triggers transition to main window when complete.
-        """
+        """Updates progress bar and triggers transition to main window when complete."""
         self.counter += 1
         self.progress.setValue(self.counter)
 

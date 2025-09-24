@@ -26,8 +26,7 @@ from utils.resource_resolver import ResourceResolver
 # --- Custom JSON formatter ---
 class JsonFormatter(logging.Formatter):
     """
-    🧾 Custom formatter for logging in JSON format.
-
+    Custom formatter for logging in JSON format.
     Formats log records with timestamp, level, module, and message.
     """
 
@@ -43,9 +42,7 @@ class JsonFormatter(logging.Formatter):
 
 # --- Logger initialization ---
 def get_logger(name: str) -> logging.Logger:
-    """
-    Initializes and returns a logger with both TXT and JSON rotating handlers.
-    """
+    """Initializes and returns a logger with both TXT and JSON rotating handlers."""
     resolver = ResourceResolver()
     log_file_txt = resolver.writable("logs/app.txt")
     log_file_json = resolver.writable("logs/app.json")

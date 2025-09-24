@@ -24,7 +24,7 @@ from utils.resource_resolver import ResourceResolver
 
 class Messenger:
     """
-    🎙️ Wrapper class for displaying styled message dialogs in PyQt6.
+    Wrapper class for displaying styled message dialogs in PyQt6.
 
     Supports:
         - Blocking dialogs: error, info, warning

@@ -1,10 +1,10 @@
 """
 📦 Module: login_controller.py
 
-Controller for managing user login in the PackingLine application.
+Controller for managing user login in the PrintSingleSN application.
 
 Handles password validation, post-authentication transitions, and process cleanup.
-Interacts with the LoginWindow UI and launches the WorkOrderController upon successful login.
+Interacts with the LoginWindow UI and launches the PrintController upon successful login.
 
 Author: Miloslav Hradecky
 """
@@ -14,21 +14,15 @@ from PyQt6.QtCore import QCoreApplication
 
 # 🧠 First-party (project-specific)
 import models.user_model
-
 from utils.login_context import LoginContext
-
 from controllers.print_controller import PrintController
 
 
 class LoginController:
-    """
-    Handles login validation and transitions to the work order phase.
-    """
+    """Handles login validation and transitions to the work order phase."""
 
     def __init__(self, login_window, window_stack):
-        """
-        Initializes login logic, UI bindings, and supporting services.
-        """
+        """Initializes login logic, UI bindings, and supporting services."""
         self.login_window = login_window
         self.window_stack = window_stack
         self.value_prefix = None
@@ -39,9 +33,7 @@ class LoginController:
         self.login_window.exit_button.clicked.connect(self.handle_exit)
 
     def handle_login(self):
-        """
-        Processes login input and opens the next window if credentials are valid.
-        """
+        """Processes login input and opens the next window if credentials are valid."""
         password = self.login_window.get_password()
         self.login_window.clear_password()
 
@@ -60,16 +52,12 @@ class LoginController:
             self.login_window.reset_password_input()
 
     def open_print_window(self):
-        """
-        Instantiates and opens the WorkOrderController window.
-        """
+        """Instantiates and opens the PrintController window."""
         print_controller = PrintController(self.window_stack)
         self.window_stack.push(print_controller.print_window)
 
     def handle_exit(self):
-        """
-        Closes the LoginWindow and exits the application.
-        """
+        """Closes the LoginWindow and exits the application."""
         self.context.logger.info("Aplikace byla ukončena uživatelem.")
         self.context.bartender_utils.kill_processes()
         self.window_stack.mark_exiting()

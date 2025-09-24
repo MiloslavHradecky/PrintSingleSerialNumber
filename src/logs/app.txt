@@ -51,3 +51,12 @@
 2025-09-23 12:27:39,117 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → 50x45_ZD621
 2025-09-23 12:27:39,117 | INFO    | PrintController         | Etiketa 'label01' úspěšně vytisknuta na '50x45_ZD621' (3 kopií)
 2025-09-23 12:27:49,811 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 09:52:10,866 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-24 09:52:10,894 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 09:52:10,895 | INFO    | StartupChecker          | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 09:52:10,896 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 09:52:26,777 | INFO    | SzvDecrypt              | Logged: PTG PTG PTG
+2025-09-24 09:53:09,823 | INFO    | BartenderUtils          | Etiketa vytisknuta: 50x45_SN.btw → 50x45_ZD621
+2025-09-24 09:53:09,824 | INFO    | PrintController         | Etiketa 'label01' úspěšně vytisknuta na '50x45_ZD621' (3 kopií)
+2025-09-24 09:53:17,745 | INFO    | PrintController         | Aplikace byla ukončena uživatelem.

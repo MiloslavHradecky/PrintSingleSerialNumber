@@ -32,11 +32,8 @@ class PathValidator:
     """
 
     def __init__(self):
-        """
-        Initializes the PathValidator by loading config and preparing logger/messenger.
-        """
+        """Initializes the PathValidator by loading config and preparing logger/messenger."""
         self.resolver = ResourceResolver()
-        # 📌 Loading the configuration file
         config_path = self.resolver.config()
         self.config = configparser.ConfigParser()
         self.config.optionxform = str  # 💡 Ensures letter size is maintained

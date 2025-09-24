@@ -1,7 +1,7 @@
 """
 📦 Module: print_controller.py
 
-Coordinates the label printing workflow in the PackingLine application.
+Coordinates the label printing workflow in the PrintSingleSN application.
 
 Handles serial input validation, label preparation, printer assignment,
 and execution of BarTender print commands. Integrates with the PrintWindow UI
@@ -30,7 +30,6 @@ from utils.set_printer import set_printer_in_label
 from utils.resource_resolver import ResourceResolver
 
 from models.user_model import get_value_prefix
-
 from views.print_window import PrintWindow
 
 
@@ -64,21 +63,20 @@ class PrintController:
     def serial_input(self) -> str:
         """Returns cleaned serial number from input field."""
 
-        return self.print_window.serial_number_input.text().strip().upper()
+        return self.print_window.serial_number_input.text().strip()
 
     def write_to_label_csv(self, serial_number: str, label_path: str):
         """Saves serial number, date, and user prefix to label.csv next to the label file."""
-
         label_file = Path(label_path)
         csv_path = label_file.parent / "label.csv"
         today = datetime.today().strftime("%Y-%m-%d")
-        prefix = get_value_prefix() or "?"  # fallback pro případ, že není nastaven
+        prefix = get_value_prefix() or "?"  # 💡 fallback in case it is not set
         row = [serial_number, today, prefix]
 
         try:
             with csv_path.open(mode="w", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f, delimiter=";")
-                writer.writerow(["SerialNumber", "Date", "Signature"])  # hlavička
+                writer.writerow(["SerialNumber", "Date", "Signature"])  # 💡 header
                 writer.writerow(row)
         except (OSError, IOError) as e:
             self.logger.error("Chyba při zápisu do label.csv: %s", str(e))
@@ -86,7 +84,6 @@ class PrintController:
 
     def print_button_click(self):
         """Main workflow triggered by print button."""
-
         serial = self.serial_input
 
         if not serial:
@@ -151,13 +148,11 @@ class PrintController:
 
     def handle_back(self):
         """Returns to previous window in the stack."""
-
         self.print_window.close()
         self.window_stack.show_previous()
 
     def handle_exit(self):
         """Closes app and terminates BarTender processes."""
-
         self.logger.info("Aplikace byla ukončena uživatelem.")
         self.bartender_utils.kill_processes()
         self.window_stack.mark_exiting()
@@ -166,5 +161,4 @@ class PrintController:
 
     def restore_ui(self, delay_ms=3000):
         """Re-enables UI inputs after a delay."""
-
         QTimer.singleShot(delay_ms,  self.print_window.restore_inputs)

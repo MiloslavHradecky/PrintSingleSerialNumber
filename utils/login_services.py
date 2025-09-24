@@ -46,7 +46,5 @@ class LoginServices:
         return self._decrypter.check_login(password)
 
     def kill_bartender_processes(self):
-        """
-        Terminates any running BarTender processes.
-        """
+        """Terminates any running BarTender processes."""
         self._bartender.kill_processes()

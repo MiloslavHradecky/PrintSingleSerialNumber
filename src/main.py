@@ -59,9 +59,7 @@ class AppLauncher:
         self.app = None
 
     def initialize(self):
-        """
-        Prepares the application environment before launch.
-        """
+        """Prepares the application environment before launch."""
         self._add_blank_line_to_log()
         log_system_info(self.version)
         self._check_single_instance()
@@ -72,17 +70,13 @@ class AppLauncher:
         self._apply_global_stylesheet()
 
     def run(self):
-        """
-        Executes the UI launch sequence.
-        """
+        """Executes the UI launch sequence."""
         self.initialize()
         self._launch_ui()
         self.app.exec()
 
     def _add_blank_line_to_log(self):
-        """
-        Adds a blank line to the TXT log for visual separation.
-        """
+        """Adds a blank line to the TXT log for visual separation."""
         try:
             log_file_txt = self.resolver.writable("logs/app.txt")
             with open(log_file_txt, "a", encoding="utf-8") as f:
@@ -91,9 +85,7 @@ class AppLauncher:
             self.logger.warning("Nepodařilo se zapsat prázdný řádek do logu: %s", e)
 
     def _check_single_instance(self):
-        """
-        Ensures that only one instance of the application is running.
-        """
+        """Ensures that only one instance of the application is running."""
         self.checker = SingleInstanceChecker("PrintSingleSnUniqueAppKey")
         if self.checker.is_running():
             self.app = QApplication([])
@@ -101,15 +93,11 @@ class AppLauncher:
             sys.exit(0)
 
     def _create_qt_app(self):
-        """
-        Creates the QApplication instance.
-        """
+        """Creates the QApplication instance."""
         self.app = QApplication([])
 
     def _apply_global_stylesheet(self):
-        """
-        Applies the global stylesheet if available.
-        """
+        """Applies the global stylesheet if available."""
         style_path = self.resolver.resource("views/themes/style.qss")
         if style_path.exists():
             with open(style_path, encoding="utf-8") as f:
@@ -133,9 +121,7 @@ class AppLauncher:
             sys.exit(1)
 
     def _launch_ui(self):
-        """
-        Displays the splash screen and launches the login window.
-        """
+        """Displays the splash screen and launches the login window."""
         login_window = LoginWindow()
         login_controller = LoginController(login_window, self.window_stack)
         login_window.controller = login_controller
@@ -152,17 +138,13 @@ class AppLauncher:
         self.window_stack.push(login_window)
 
     def shutdown(self):
-        """
-        Cleans up resources before application exit.
-        """
+        """Cleans up resources before application exit."""
         if self.checker:
             self.checker.release()
 
 
 def main():
-    """
-    Entry point for the PrintSingleSN application.
-    """
+    """Entry point for the PrintSingleSN application."""
     launcher = AppLauncher(__version__)
     launcher.run()
     launcher.shutdown()

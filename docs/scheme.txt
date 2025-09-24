@@ -7,7 +7,7 @@
 │
 ├── controllers/
 │   ├── login_controller.py
-│   └──
+│   └── print_controller.py
 │
 ├── docs/
 │   ├── home_terminal.md
@@ -18,6 +18,7 @@
 │   └── version.txt
 │
 ├── models/
+│   ├── user_info.py
 │   └── user_model.py
 │
 ├── settings/
@@ -33,13 +34,17 @@
 │   └── main.py
 │
 ├── utils/
-│   ├── config_checker.py
-│   ├── ensure_logs_dir.py
+│   ├── bartender_utils.py
+│   ├── config_reader.py
 │   ├── logger.py
+│   ├── login_context.py
+│   ├── login_services.py
 │   ├── messenger.py
 │   ├── path_validation.py
 │   ├── resource_resolver.py
+│   ├── set_printer.py
 │   ├── single_instance.py
+│   ├── startup_checker.py
 │   ├── system_info.py
 │   └── window_stack.py
 │
@@ -48,13 +53,15 @@
 │   │   ├── login.tiff
 │   │   ├── main.ico
 │   │   ├── message.ico
+│   │   ├── print.png
 │   │   └── splash_logo.png
 │   │
 │   ├── themes/
 │   │   └── style.qss
 │   │
 │   ├── login_window.py
-│   └──
+│   ├── print_window.py
+│   └── splash_screen.py
 │
 ├── .flake8
 ├── .gitignore

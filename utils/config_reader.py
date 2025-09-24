@@ -14,10 +14,7 @@ from utils.resource_resolver import ResourceResolver
 
 
 class ConfigReader:
-    """
-    Reads and provides access to values from the configuration file.
-    """
-
+    """Reads and provides access to values from the configuration file."""
     def __init__(self):
         resolver = ResourceResolver()
         config_path = resolver.config()
@@ -79,9 +76,7 @@ class ConfigReader:
 
     @staticmethod
     def load() -> "ConfigReader":
-        """
-        Returns a fully initialized ConfigReader instance.
-        """
+        """Returns a fully initialized ConfigReader instance."""
         return ConfigReader()
 
     # 🧪 Optional validation (currently unused)

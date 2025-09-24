@@ -41,30 +41,22 @@ class ResourceResolver:
         self.base_path = self._detect_base_path()
 
     def _detect_base_path(self) -> Path:  # noqa
-        """
-        Detects base path depending on runtime context (standard or PyInstaller).
-        """
+        """Detects base path depending on runtime context (standard or PyInstaller)."""
         if getattr(sys, 'frozen', False):
             return Path(sys._MEIPASS)  # type: ignore
         return Path(__file__).resolve().parent.parent
 
     def resource(self, relative_path: str) -> Path:
-        """
-        Resolves path to bundled resource (e.g. .qss, images).
-        """
+        """Resolves path to bundled resource (e.g. .qss, images)."""
         return self.base_path / relative_path
 
     def resolve(self, config_value: str) -> Path:
-        """
-        Resolves config-defined path (absolute or relative) to absolute path.
-        """
+        """Resolves config-defined path (absolute or relative) to absolute path."""
         path = Path(config_value)
         return path if path.is_absolute() else self.resource(config_value)
 
     def writable(self, relative_path: str) -> Path:  # noqa
-        """
-        Returns writable path relative to script or executable location.
-        """
+        """Returns writable path relative to script or executable location."""
         return Path(sys.argv[0]).resolve().parent / relative_path
 
     def config(self) -> Path:

@@ -8,7 +8,7 @@ config.optionxform = str  # ✅ Preserve key casing
 
 # 📌 Section: Window – application title
 config["Window"] = {
-    "title": "Print Single Serial Number"
+    "title": "Print Single SN"
 }
 
 # 📁 Section: Paths – system paths and references

@@ -16,9 +16,7 @@ from utils.bartender_utils import BartenderUtils
 
 
 class LoginContext:  # pylint: disable=too-few-public-methods
-    """
-    Holds shared services and configuration for LoginController.
-    """
+    """Holds shared services and configuration for LoginController."""
     def __init__(self, login_window):
         self.logger = get_logger("LoginController")
         self.messenger = Messenger(login_window)

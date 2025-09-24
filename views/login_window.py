@@ -91,7 +91,7 @@ class LoginWindow(QWidget):
         # 📌 Linking the button to the login action
         self.password_input.returnPressed.connect(self.login_button.click)
 
-        # 📌 Přidání prvků do hlavního layoutu
+        # 📌 Adding elements to the main layout
         layout.addWidget(self.password_input)
         layout.addWidget(self.login_button)
         layout.addWidget(self.exit_button)
@@ -105,29 +105,21 @@ class LoginWindow(QWidget):
         self.password_input.setFocus()
 
     def _style_password_input(self):
-        """
-        Applies placeholder color styling to the password input field.
-        """
+        """Applies placeholder color styling to the password input field."""
         palette = self.password_input.palette()
         placeholder_color = QColor("#757575")
         palette.setColor(QPalette.ColorRole.PlaceholderText, placeholder_color)
         self.password_input.setPalette(palette)
 
     def get_password(self) -> str:
-        """
-        Returns the entered password from the input field.
-        """
+        """Returns the entered password from the input field."""
         return self.password_input.text().strip()
 
     def clear_password(self):
-        """
-        Clears the password input field.
-        """
+        """Clears the password input field."""
         self.password_input.clear()
 
     def reset_password_input(self):
-        """
-        Clears the password field and sets focus for new input.
-        """
+        """Clears the password field and sets focus for new input."""
         self.password_input.clear()
         self.password_input.setFocus()

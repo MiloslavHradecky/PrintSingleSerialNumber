@@ -124,8 +124,8 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 📄 .\views\print_window.py
 
--------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 9.84/10, +0.16)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 📄 .\views\splash_screen.py

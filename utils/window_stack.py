@@ -1,5 +1,5 @@
 """
-📦 Module: window_stack_manager.py
+📦 Module: window_stack.py
 
 Manages a stack of active windows in a PyQt6 application.
 
@@ -24,16 +24,12 @@ class WindowStackManager:
     """
 
     def __init__(self):
-        """
-        Initializes the window stack and exit flag.
-        """
+        """Initializes the window stack and exit flag."""
         self._stack = []
         self._is_exiting = False
 
     def mark_exiting(self):
-        """
-        Marks the application as exiting to prevent window restoration.
-        """
+        """Marks the application as exiting to prevent window restoration."""
         self._is_exiting = True
 
     def push(self, window):
@@ -52,7 +48,6 @@ class WindowStackManager:
     def show_previous(self):
         """
         Shows the previous window in the stack without removing the current one.
-
         Useful for manual navigation (e.g. 'Back' button).
         """
         if len(self._stack) >= 2 and not self._is_exiting:
@@ -83,7 +78,6 @@ class WindowStackManager:
     def _on_window_closed(self):
         """
         Handles cleanup when a window is closed.
-
         Pops the window from the stack and restores the previous one unless exiting.
         """
         if self._is_exiting:

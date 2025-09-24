@@ -20,7 +20,6 @@ class BartenderUtils:
     Utility class for managing BarTender-related processes.
     Provides methods to kill, launch, and monitor BarTender components.
     """
-
     def __init__(self, messenger=None, config=None):
         """
         Initializes the utility with optional Messenger for user feedback.
@@ -34,9 +33,7 @@ class BartenderUtils:
         self.config = config
 
     def kill_processes(self):
-        """
-        Terminates all running BarTender instances (Cmdr.exe and bartend.exe).
-        """
+        """Terminates all running BarTender instances (Cmdr.exe and bartend.exe)."""
         try:
             subprocess.run(
                 "taskkill /f /im cmdr.exe 1>nul 2>nul",
@@ -63,6 +60,7 @@ class BartenderUtils:
         Args:
             label_path (str): Full path to the .btw label template.
             printer_name (str): Name of the printer to use.
+            copies (int): Number of copies to print.
         """
         label_file = Path(label_path)
 
@@ -99,7 +97,7 @@ class BartenderUtils:
 
         try:
             subprocess.run(command, shell=True, check=True)
-            self.logger.info("Etiketa vytisknuta: %s → %s", label_file.name, printer_name)
+            self.logger.info("Etiketa: %s tiskárna: %s", label_file.name, printer_name)
         except subprocess.CalledProcessError as e:
             self.logger.error("Chyba při tisku BarTenderem: %s", str(e))
             if self.messenger:
