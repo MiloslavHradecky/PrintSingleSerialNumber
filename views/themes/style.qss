@@ -98,7 +98,7 @@ QLabel#PrintInfoLabel {
 /*   Splash screen background    */
 /* ============================= */
 
-CustomSplash#CustomSplash {
+QWidget#SplashContainer {
     background-color: #001020;
     border-radius: 20px;
 }

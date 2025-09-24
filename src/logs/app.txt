@@ -278,3 +278,27 @@
 2025-09-24 21:45:05,148 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
 2025-09-24 21:45:05,148 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
 2025-09-24 21:45:19,711 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 22:24:46,598 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-24 22:24:46,626 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 22:24:46,627 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 22:24:46,627 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 22:24:55,878 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 22:25:08,225 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-24 22:25:08,260 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 22:25:08,260 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 22:25:08,260 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 22:25:17,238 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 22:40:57,999 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-24 22:40:58,029 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 22:40:58,029 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 22:40:58,029 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 22:41:06,731 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.
+
+2025-09-24 22:41:09,378 | INFO    | SystemInfo              | Aplikace v1.0.0.0 spuštěna | PC: DESKTOP-MH | IP: 192.168.1.75
+2025-09-24 22:41:09,404 | INFO    | PathValidator           | Všechny cesty v configu jsou validní.
+2025-09-24 22:41:09,405 | INFO    | StartupChecker          | Logovací složka připravena: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-24 22:41:09,405 | INFO    | StartupChecker          | Konfigurační soubor nalezen: C:\Users\MiloslavHradecky\GitHome\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-24 22:41:35,539 | INFO    | LoginController         | Aplikace byla ukončena uživatelem.

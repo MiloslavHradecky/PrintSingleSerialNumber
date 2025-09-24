@@ -65,6 +65,9 @@ class CustomSplash(QWidget):
         super().__init__()
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
+
+        # 🎨 Transparent background + frameless
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
         self.setObjectName("CustomSplash")
 
@@ -83,31 +86,39 @@ class CustomSplash(QWidget):
         splash_image_path = self.resolver.resource("views/assets/splash_logo.png")
         pixmap = QPixmap(str(splash_image_path))
         scaled = pixmap.scaled(
-            240,
-            240,
+            240, 240,
             Qt.AspectRatioMode.KeepAspectRatio,
             Qt.TransformationMode.SmoothTransformation
         )
         logo_label = PixmapFader(scaled)
 
+        # 🎨 Container with rounded background
+        container = QWidget(self)
+        container.setObjectName("SplashContainer")
+
         # 📦 Layout configuration
-        layout = QVBoxLayout()
+        layout = QVBoxLayout(container)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(15)
         layout.addWidget(logo_label, alignment=Qt.AlignmentFlag.AlignCenter)
-        layout.addStretch()
-        self.setLayout(layout)
 
         # 💬 Display loading message
-        self.message = QLabel("Inicializuji aplikaci...", self)
+        self.message = QLabel("Inicializuji aplikaci...", container)
         self.message.setObjectName("splashMessage")
-        self.message.setGeometry(100, 310, 400, 30)
+        layout.addWidget(self.message)
 
         # 📶 Progress bar setup
-        self.progress = QProgressBar(self)
+        self.progress = QProgressBar(container)
         self.progress.setObjectName("splashProgress")
-        self.progress.setGeometry(100, 350, 400, 25)
         self.progress.setRange(0, 200)
         self.progress.setValue(0)
         self.progress.setTextVisible(True)
+        layout.addWidget(self.progress)
+
+        # 📦 Main layout
+        main_layout = QVBoxLayout(self)
+        main_layout.addWidget(container)
+        self.setLayout(main_layout)
 
         # 🕒 Timer to update progress bar and trigger transition
         self.timer = QTimer()
