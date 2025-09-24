@@ -63,10 +63,10 @@ class AppLauncher:
         self._add_blank_line_to_log()
         log_system_info(self.version)
         self._check_single_instance()
+        self._create_qt_app()
         self._validate_config_paths()
         self.startup_checker.ensure_logs_dir()
         self.startup_checker.check_config_or_exit()
-        self._create_qt_app()
         self._apply_global_stylesheet()
 
     def run(self):
@@ -113,7 +113,7 @@ class AppLauncher:
         validator = PathValidator()
         if not validator.validate():
             for key, path in validator.get_missing_paths():
-                self.logger.warning("Chybějící cesta: s% → s%", key, path)
+                self.logger.warning("Chybějící cesta: %s → %s", key, path)
             Messenger(None).error(
                 "Konfigurace obsahuje neplatné cesty. Aplikace bude ukončena.",
                 "Main"

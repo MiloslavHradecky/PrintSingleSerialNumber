@@ -98,8 +98,9 @@ QLabel#PrintInfoLabel {
 /*   Splash screen background    */
 /* ============================= */
 
-CustomSplash {
-    background-color: #202020;
+CustomSplash#CustomSplash {
+    background-color: #001020;
+    border-radius: 20px;
 }
 
 /* ============================= */
@@ -108,7 +109,8 @@ CustomSplash {
 
 QLabel#splashMessage {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
     qproperty-alignment: AlignCenter;
 }
 
@@ -117,13 +119,16 @@ QLabel#splashMessage {
 /* ============================= */
 
 QProgressBar#splashProgress {
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
+    color: #D3810F;
+    border: 2px solid #D3810F;
+    border-radius: 8px;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #0D1B2A;
     text-align: center;
 }
 QProgressBar#splashProgress::chunk {
-    background-color: #00c4ff;
-    width: 10px;
+    background-color: #2196F3;
+    width: 12px;
     margin: 1px;
 }

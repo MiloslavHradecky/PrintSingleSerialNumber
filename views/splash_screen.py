@@ -66,6 +66,7 @@ class CustomSplash(QWidget):
         self.target_window = target_window  # 👀 Window to show after splash
         self.resolver = ResourceResolver()
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
+        self.setObjectName("CustomSplash")
 
         config = ConfigReader()
         title = config.get_window_title()
@@ -82,8 +83,8 @@ class CustomSplash(QWidget):
         splash_image_path = self.resolver.resource("views/assets/splash_logo.png")
         pixmap = QPixmap(str(splash_image_path))
         scaled = pixmap.scaled(
-            300,
-            300,
+            240,
+            240,
             Qt.AspectRatioMode.KeepAspectRatio,
             Qt.TransformationMode.SmoothTransformation
         )
