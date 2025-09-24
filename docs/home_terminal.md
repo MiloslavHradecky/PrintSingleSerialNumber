@@ -28,6 +28,7 @@ a = Analysis(
         ('views/assets/login.tiff', 'views/assets'),
         ('views/assets/main.ico', 'views/assets'),
         ('views/assets/message.ico', 'views/assets'),
+        ('views/assets/print.png', 'views/assets'),
         ('views/assets/splash_logo.png', 'views/assets'),
         ('views/themes/style.qss', 'views/themes'),
         ('controllers/', 'controllers'),
