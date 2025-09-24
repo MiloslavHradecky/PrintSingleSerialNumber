@@ -113,7 +113,7 @@ class PrintWindow(QWidget):
     def _style_serial_input(self):
         """Applies placeholder color styling to the serial number input field."""
         palette = self.serial_number_input.palette()
-        palette.setColor(QPalette.ColorRole.PlaceholderText, QColor('#757575'))
+        palette.setColor(QPalette.ColorRole.PlaceholderText, QColor("#FFFFFF"))
         self.serial_number_input.setPalette(palette)
 
     def reset_input_focus(self):

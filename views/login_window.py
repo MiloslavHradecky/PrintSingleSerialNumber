@@ -63,7 +63,7 @@ class LoginWindow(QWidget):
         layout = QVBoxLayout()
 
         # 📌 Application logo
-        login_logo = self.resolver.resource("views/assets/login.tiff")
+        login_logo = self.resolver.resource("views/assets/user.png")
         self.logo = QLabel(self)
         pixmap = QPixmap(str(login_logo)).scaled(
             self.width() - 20, 200,
