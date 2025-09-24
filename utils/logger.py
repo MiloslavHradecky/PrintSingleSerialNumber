@@ -63,7 +63,7 @@ def get_logger(name: str) -> logging.Logger:
         backupCount=5,
         encoding="utf-8"
     )
-    txt_formatter = logging.Formatter("%(asctime)s | %(levelname)-7s | %(name)-23s | %(message)s")
+    txt_formatter = logging.Formatter("%(asctime)s | %(levelname)-7s | %(name)-17s | %(message)s")
     txt_handler.setFormatter(txt_formatter)
     logger.addHandler(txt_handler)
 
