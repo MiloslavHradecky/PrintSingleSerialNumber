@@ -1,6 +1,6 @@
 # Commands to create an exe file
 
-## PackingLine
+## PrintSingleSerialNumber
 
 ### 1. Open a session in a given folder
 
@@ -25,7 +25,7 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('views/assets/login.tiff', 'views/assets'),
+        ('views/assets/user.png', 'views/assets'),
         ('views/assets/main.ico', 'views/assets'),
         ('views/assets/message.ico', 'views/assets'),
         ('views/assets/print.png', 'views/assets'),
