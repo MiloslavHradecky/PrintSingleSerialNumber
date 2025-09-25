@@ -82,6 +82,31 @@ class PrintController:
             self.logger.error("Chyba při zápisu do label.csv: %s", str(e))
             self.messenger.error("Nepodařilo se zapsat do label.csv", "Print Ctrl")
 
+    def write_sn(self, serial_number: str, copies: int, printer: str):
+        """
+        Appends serial number, timestamp, and user prefix to single.sn file
+        located in the orders_path directory defined in config.ini.
+        """
+        try:
+            orders_path_raw = self.config.get("Paths", "orders_path")
+            orders_path = Path(orders_path_raw)
+            file_path = orders_path / "single.sn"
+
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            prefix = get_value_prefix() or "?"
+            row = f"{timestamp};{serial_number};{copies};{printer};{prefix}"
+
+            file_exists = file_path.exists()
+
+            with file_path.open(mode="a", encoding="utf-8") as f:
+                if not file_exists:
+                    f.write("date;sn;copy;printer;prefix\n")
+                f.write(row + "\n")
+
+        except (OSError, IOError, configparser.Error) as e:
+            self.logger.error("Chyba při zápisu do single.sn: %s", str(e))
+            self.messenger.error("Nepodařilo se zapsat do single.sn", "Print Ctrl")
+
     def print_button_click(self):
         """Main workflow triggered by print button."""
         serial = self.serial_input
@@ -137,11 +162,13 @@ class PrintController:
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
             self.logger.info(
-                "Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopie)",
+                "Etiketa '%s' '%s' '%s' (%d x)",
                 label_key,
                 printer,
+                serial,
                 copies
             )
+            self.write_sn(serial, copies, printer)
 
         self.messenger.auto_info_dialog("Zpracovávám požadavek...", timeout_ms=3000)
         self.restore_ui()
