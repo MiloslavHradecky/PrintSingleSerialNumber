@@ -260,3 +260,14 @@
 {"timestamp": "2025-09-24 23:59:00,160", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\Users\\MiloslavHradecky\\GitHome\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
 {"timestamp": "2025-09-24 23:59:14,147", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
 {"timestamp": "2025-09-25 00:00:00,340", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-25 09:22:15,288", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39"}
+{"timestamp": "2025-09-25 09:22:15,441", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-25 09:22:15,442", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-25 09:22:15,443", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-25 09:22:37,549", "level": "INFO", "module": "LoginController", "message": "Aplikace byla ukončena uživatelem."}
+{"timestamp": "2025-09-25 10:53:15,975", "level": "INFO", "module": "SystemInfo", "message": "Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39"}
+{"timestamp": "2025-09-25 10:53:16,156", "level": "INFO", "module": "PathValidator", "message": "Všechny cesty v configu jsou validní."}
+{"timestamp": "2025-09-25 10:53:16,157", "level": "INFO", "module": "StartupChecker", "message": "Logovací složka připravena: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\logs"}
+{"timestamp": "2025-09-25 10:53:16,159", "level": "INFO", "module": "StartupChecker", "message": "Konfigurační soubor nalezen: C:\\GitWork\\Python\\PyQt\\PrintSingleSerialNumber\\src\\config.ini"}
+{"timestamp": "2025-09-25 10:53:26,793", "level": "INFO", "module": "SzvDecrypt", "message": "Logged: PTG PTG PTG"}
+{"timestamp": "2025-09-25 10:54:21,488", "level": "INFO", "module": "PrintController", "message": "Aplikace byla ukončena uživatelem."}
