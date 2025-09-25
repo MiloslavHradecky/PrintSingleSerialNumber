@@ -137,7 +137,7 @@ class PrintController:
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
             self.logger.info(
-                "Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopií)",
+                "Etiketa '%s' úspěšně vytisknuta na '%s' (%d kopie)",
                 label_key,
                 printer,
                 copies
