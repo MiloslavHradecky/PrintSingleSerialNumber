@@ -162,7 +162,7 @@ class PrintController:
             self.write_to_label_csv(serial, label_path)
             self.bartender_utils.print_label(label_path, printer, copies)
             self.logger.info(
-                "Etiketa '%s' '%s' '%s' (%d x)",
+                "Etiketa: '%s' | Tiskárna: '%s' | Serial number: '%s' | Pcs kopií: '%d'",
                 label_key,
                 printer,
                 serial,

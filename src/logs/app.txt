@@ -1,44 +1,11 @@
 
-2025-09-25 12:05:05,420 | INFO    | SystemInfo        | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
-2025-09-25 12:05:05,588 | INFO    | PathValidator     | Všechny cesty v configu jsou validní.
-2025-09-25 12:05:05,589 | INFO    | StartupChecker    | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
-2025-09-25 12:05:05,590 | INFO    | StartupChecker    | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
-2025-09-25 12:05:15,771 | INFO    | SzvDecrypt        | Logged: PTG PTG PTG
-2025-09-25 12:05:39,036 | INFO    | BartenderUtils    | Etiketa: 50x45_SN.btw tiskárna: 50x45_ZD621
-2025-09-25 12:05:39,037 | INFO    | PrintController   | Etiketa 'label01' úspěšně vytisknuta na '50x45_ZD621' (2 kopie)
-2025-09-25 12:05:44,117 | INFO    | BartenderUtils    | Etiketa: 68x20_SN.btw tiskárna: 68x20_430t
-2025-09-25 12:05:44,117 | INFO    | PrintController   | Etiketa 'label02' úspěšně vytisknuta na '68x20_430t' (2 kopie)
-2025-09-25 12:05:48,901 | INFO    | PrintController   | Aplikace byla ukončena uživatelem.
-
-2025-09-25 13:02:36,797 | INFO    | SystemInfo        | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
-2025-09-25 13:02:36,924 | INFO    | PathValidator     | Všechny cesty v configu jsou validní.
-2025-09-25 13:02:36,925 | INFO    | StartupChecker    | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
-2025-09-25 13:02:36,926 | INFO    | StartupChecker    | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
-2025-09-25 13:02:46,585 | INFO    | SzvDecrypt        | Logged: PTG PTG PTG
-2025-09-25 13:03:06,372 | INFO    | BartenderUtils    | Etiketa: 50x45_SN.btw tiskárna: 50x45_ZD621
-2025-09-25 13:03:06,372 | INFO    | PrintController   | Etiketa 'label01' '50x45_ZD621' '9876541111' (2 x)
-2025-09-25 13:03:10,699 | INFO    | BartenderUtils    | Etiketa: 68x20_SN.btw tiskárna: 68x20_430t
-2025-09-25 13:03:10,699 | INFO    | PrintController   | Etiketa 'label02' '68x20_430t' '9876541111' (2 x)
-2025-09-25 13:03:15,946 | INFO    | PrintController   | Aplikace byla ukončena uživatelem.
-
-2025-09-25 13:34:09,736 | INFO    | SystemInfo        | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
-2025-09-25 13:34:09,871 | INFO    | PathValidator     | Všechny cesty v configu jsou validní.
-2025-09-25 13:34:09,872 | INFO    | StartupChecker    | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
-2025-09-25 13:34:09,872 | INFO    | StartupChecker    | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
-2025-09-25 13:34:25,835 | INFO    | SzvDecrypt        | Logged: PTG PTG PTG
-2025-09-25 13:34:47,889 | INFO    | BartenderUtils    | Etiketa: 50x45_SN.btw tiskárna: 50x45_ZD621
-2025-09-25 13:34:47,889 | INFO    | PrintController   | Etiketa 'label01' '50x45_ZD621' '777799990000' (2 x)
-2025-09-25 13:34:52,318 | INFO    | BartenderUtils    | Etiketa: 68x20_SN.btw tiskárna: 68x20_430t
-2025-09-25 13:34:52,318 | INFO    | PrintController   | Etiketa 'label02' '68x20_430t' '777799990000' (2 x)
-2025-09-25 13:34:57,348 | INFO    | PrintController   | Aplikace byla ukončena uživatelem.
-
-2025-09-25 13:39:02,677 | INFO    | SystemInfo        | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
-2025-09-25 13:39:02,757 | INFO    | PathValidator     | Všechny cesty v configu jsou validní.
-2025-09-25 13:39:02,758 | INFO    | StartupChecker    | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
-2025-09-25 13:39:02,758 | INFO    | StartupChecker    | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
-2025-09-25 13:39:12,032 | INFO    | SzvDecrypt        | Logged: PTG PTG PTG
-2025-09-25 13:39:25,176 | INFO    | BartenderUtils    | Etiketa: 50x45_SN.btw tiskárna: 50x45_ZD621
-2025-09-25 13:39:25,177 | INFO    | PrintController   | Etiketa 'label01' '50x45_ZD621' '00009999' (2 x)
-2025-09-25 13:39:29,689 | INFO    | BartenderUtils    | Etiketa: 68x20_SN.btw tiskárna: 68x20_430t
-2025-09-25 13:39:29,690 | INFO    | PrintController   | Etiketa 'label02' '68x20_430t' '00009999' (2 x)
-2025-09-25 13:39:34,825 | INFO    | PrintController   | Aplikace byla ukončena uživatelem.
+2025-09-25 15:41:56,545 | INFO    | SystemInfo        | Aplikace v1.0.0.0 spuštěna | PC: HRADECKY-NB | IP: 10.0.17.39
+2025-09-25 15:41:56,625 | INFO    | PathValidator     | Všechny cesty v configu jsou validní.
+2025-09-25 15:41:56,626 | INFO    | StartupChecker    | Logovací složka připravena: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\logs
+2025-09-25 15:41:56,627 | INFO    | StartupChecker    | Konfigurační soubor nalezen: C:\GitWork\Python\PyQt\PrintSingleSerialNumber\src\config.ini
+2025-09-25 15:42:06,206 | INFO    | SzvDecrypt        | Logged: PTG PTG PTG
+2025-09-25 15:42:40,337 | INFO    | BartenderUtils    | Etiketa: 50x45_SN.btw tiskárna: 50x45_ZD621
+2025-09-25 15:42:40,337 | INFO    | PrintController   | Etiketa: 'label01' | Tiskárna: '50x45_ZD621' | Serial number: '90009000' | Pcs kopií: '1'
+2025-09-25 15:42:44,739 | INFO    | BartenderUtils    | Etiketa: 68x20_SN.btw tiskárna: 68x20_430t
+2025-09-25 15:42:44,740 | INFO    | PrintController   | Etiketa: 'label02' | Tiskárna: '68x20_430t' | Serial number: '90009000' | Pcs kopií: '2'
+2025-09-25 15:42:50,468 | INFO    | PrintController   | Aplikace byla ukončena uživatelem.
