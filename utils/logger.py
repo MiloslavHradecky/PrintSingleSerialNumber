@@ -59,7 +59,7 @@ def get_logger(name: str) -> logging.Logger:
     # 📌 TXT log with rotation
     txt_handler = RotatingFileHandler(
         log_file_txt,
-        maxBytes=1_000_000,
+        maxBytes=100_000_000,
         backupCount=5,
         encoding="utf-8"
     )
@@ -70,7 +70,7 @@ def get_logger(name: str) -> logging.Logger:
     # 📌 JSON log with rotation
     json_handler = RotatingFileHandler(
         log_file_json,
-        maxBytes=1_000_000,
+        maxBytes=100_000_000,
         backupCount=5,
         encoding="utf-8"
     )
